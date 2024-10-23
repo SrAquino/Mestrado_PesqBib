@@ -1,0 +1,184 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}                          % Define o idioma para português do Brasil
+\usepackage{csquotes}                               % Para lidar com aspas de maneira apropriada com babel
+
+\usepackage{graphicx}                               % Pacote para inserção de imagens
+\usepackage{hyperref}                               % Pacote para links clicáveis
+\usepackage{enumitem}                               % Pacote para personalização de listas
+
+\usepackage{geometry}       % Pacote para ajustar margens
+\geometry{                  % Definindo margens personalizadas (em centímetros)
+  left=2.5cm,  % Margem esquerda
+  right=2.5cm, % Margem direita
+  top=2.5cm,   % Margem superior
+  bottom=2.5cm % Margem inferior
+}
+
+\usepackage[backend=biber,style=ieee]{biblatex}     % Estilo ieee para bibliografia numerada
+\addbibresource{ref.bib}                            % Arquivo .bib
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    % Cabeçalho personalizado
+    \includegraphics[width=0.3\textwidth]{./Images/Logo UFLA - Colorida chapada.png}
+
+    \vspace*{2cm} % Espaçamento vertical antes do cabeçalho
+    \Large
+    Universidade Federal de Lavras\\
+    PPGCC\\
+    PCC548 – Pesquisa bibliográfica\\
+    
+    \vspace{2cm} % Espaço entre o cabeçalho e o título
+    \huge % Define o tamanho da fonte do título
+    \textbf{Protocolo de Revisão Sistemática}
+    
+    \vfill % Adiciona um espaçamento flexível antes do rodapé (opcional)
+    
+    % Opcionalmente, você pode incluir seu nome e a data aqui
+    \large
+    Douglas Aquino T. Mendes\\
+    \today % Insere a data atual
+\end{titlepage}
+
+\tableofcontents    % Sumário
+\newpage
+
+\section{Introdução}
+
+O objetivo deste trabalho é desenvolver o protocolo de uma revisão sistemática. Um protocolo bem estruturado é a base para garantir que o processo de revisão sistemática seja conduzido de maneira rigorosa, transparente e replicável. O protocolo deve definir claramente a questão de pesquisa, os critérios de inclusão/exclusão, as bases de dados a serem consultadas, bem como a metodologia de seleção e análise dos estudos.
+
+\section{Etapas do Trabalho}
+\begin{itemize}
+    \item \textbf{Escolha do Tema:} Deverá ser escolhido um tema de pesquisa relevante e com potencial para uma revisão sistemática. O tema deve estar relacionado ao curso e deve ter uma questão de pesquisa clara e específica.
+    
+    \item \textbf{Formulação da Questão de Pesquisa:} Com base no tema escolhido, formular uma questão de pesquisa. Para isso, será utilizado a estratégia PICO (População, Intervenção, Comparação, Desfecho). A questão de pesquisa deve ser respondida com base nas evidências que serão coletadas durante a revisão.
+    
+    \item \textbf{Definição dos Critérios de Inclusão e Exclusão:} Estabelecer critérios claros para incluir ou excluir estudos na revisão sistemática. Esses critérios podem ser baseados em:
+    \begin{itemize}
+        \item Tipo de estudo
+        \item População estudada
+        \item Tipo de intervenção ou condição estudada
+        \item Data de publicação
+        \item Idioma dos artigos
+    \end{itemize}
+    
+    \item \textbf{Identificação das Fontes de Informação:} Listar as bases de dados e outras fontes de informação nas quais serão realizada as buscas por artigos. É importante que as bases de dados sejam relevantes para a área de estudo.
+    
+    \item \textbf{Estratégia de Busca:} Definir a estratégia de busca, incluindo as palavras-chave e termos utilizados para identificar os artigos. As estratégias devem ser detalhadas o suficiente para que outros pesquisadores possam replicá-las. O uso de operadores booleanos e combinações de termos é essencial para garantir uma busca abrangente.
+    
+    \item \textbf{Seleção dos Estudos:} Descrever o processo de seleção dos estudos, incluindo a fase de triagem de títulos e resumos e a leitura completa dos textos.
+    
+    \item \textbf{Extração e Análise dos Dados:} Deve-se definir como os dados serão extraídos dos estudos selecionados e quais tipos de dados serão coletados (por exemplo, características dos participantes, resultados principais, métodos utilizados, etc.). Também deverá ser especificado como os dados serão sintetizados e analisados (por exemplo, análise qualitativa ou quantitativa).
+    
+    \item \textbf{Avaliação da Qualidade dos Estudos:} Escolher um método para avaliar a qualidade dos estudos incluídos. Poderão ser utilizados instrumentos como a Escala de Jadad ou o GRADE (Grading of Recommendations, Assessment, Development, and Evaluation).
+    
+    \item \textbf{Plano de Análise de Resultados:} Incluir um plano de análise dos resultados. Se for apropriado, descrever como realizar uma meta-análise (agregando os dados de múltiplos estudos) ou uma síntese narrativa (quando os dados não forem quantitativos).
+\end{itemize}
+
+\section{Escolha do Tema}
+
+A escolha do tema é o primeiro passo em uma revisão sistemática. Para este trabalho o tema deve ser relevante para a área de ciência da computação e ter potencial para gerar uma questão de pesquisa específica além de refletir uma lacuna de conhecimento na literatura existente, permitindo que a revisão sistemática forneça novas perspectivas ou uma síntese das evidências disponíveis. Para garantir a relevância, o tema deve estar alinhado aos interesses da comunidade científica e acadêmica, considerando também a disponibilidade de estudos publicados na área. Por fim, o tema deve ser delimitado o suficiente para que a revisão sistemática seja viável, considerando o tempo e os recursos disponíveis para o trabalho.
+
+O tema escolhido para esta revisão sistemática é \textbf{"Sistema de Monitoramento e Correção de Exercícios com Halteres Utilizando Sensores Inerciais para Academias Inteligentes"}. A escolha deste tema se justifica pelas questões levantadas inicialmente: Um sistema de monitoramento utilizando sensores inerciais é relevante no contexto de academias inteligentes? Sensores inerciais conseguem monitorar e corrigir a execução de exercícios físicos de forma tão eficaz quanto outros métodos, como o monitoramento por vídeo? Além disso, quais são as limitações e vantagens do uso dessa tecnologia em comparação a outras formas de monitoramento? Este tema busca investigar se o uso de sensores inerciais é capaz de proporcionar resultados seguros e eficientes no monitoramento de exercícios com halteres, com potencial para melhorar o desempenho dos praticantes e reduzir o risco de lesões.
+
+Ao explorar essas questões, espera-se que a revisão sistemática forneça uma visão das evidências disponíveis, ajudando a esclarecer o papel dos sensores inerciais no desenvolvimento de academias inteligentes e tecnologias relacionadas ao treinamento físico. Adicionalmente, a realização de uma revisão sistemática sobre esse tema permitirá consolidar o estado atual das pesquisas, identificando lacunas no desenvolvimento tecnológico e novas oportunidades para a aplicação de sensores inerciais.
+
+\section{Formulação da Questão de Pesquisa}
+
+Com base no tema escolhido, a formulação da questão de pesquisa pode ser guiada pela estratégia PICO (População, Intervenção, Comparação e Desfecho), que organiza os principais aspectos da pesquisa. Abaixo está a tabela \ref{tab:PICO} com os pontos de vista, o tema principal relacionado e possíveis sinônimos para cada elemento, que podem ser utilizados para construir uma estratégia de busca abrangente.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{|p{3cm}|p{4cm}|p{7cm}|}
+\hline
+\textbf{Ponto de Vista} & \textbf{Tema Principal} & \textbf{Sinônimos/Termos Relacionados} \\ \hline
+População (P)           & Usuários de halteres    & Academia, fisioterapia, atividade física, praticantes de musculação, treino com pesos \\ \hline
+Intervenção (I)         & Sensores inerciais      & Acelerômetro, giroscópio, dispositivos inerciais \\ \hline
+Comparação (C)          & Monitoramento por vídeo    & Supervisão humana, acompanhamento por instrutores \\ \hline
+Desfecho (O)            & Correção de exercícios  & Precisão no monitoramento, reconhecimento de exercícios, melhoria no desempenho, redução de lesões, correção postural \\ \hline
+\end{tabular}
+\caption{Estrutura PICO com temas principais e sinônimos.}
+\label{tab:PICO}
+\end{table}
+\newpage
+
+A partir dessa estrutura, a questão de pesquisa pode ser formulada da seguinte maneira:
+
+\textit{"Sensores inerciais possuem vantagens e podem ser tão eficaz quanto outros métodos de monitoramento, como vídeo ou acompanhamento humano, para identificar, corrigir e melhorar a execução de exercícios com halteres, contribuindo para a melhoria de desempenho e redução de lesões?"}
+
+\section{Definição dos Critérios de Inclusão e Exclusão}
+
+Para garantir que os estudos selecionados sejam relevantes e adequados para responder à questão de pesquisa, é preciso definir os critérios de inclusão e exclusão. Esses critérios ajudam a restringir a revisão sistemática apenas aos estudos que fornecem evidências confiáveis e pertinentes sobre o uso de sensores inerciais para o monitoramento de exercícios com halteres em academias inteligentes.
+
+Os critérios definidos são:
+
+\begin{itemize}
+    \item \textbf{Tipo de estudo}: Apenas estudos experimentais que investigam o uso de sensores inerciais em ambientes de academia ou em cenários similares a monitoramento de exercícios serão incluídos. Estudos teóricos ou puramente descritivos serão excluídos.
+    
+    \item \textbf{População}: Estudos que envolvem usuários de halteres ou praticantes de musculação serão incluídos, assim como estudos que utilizam sensores inerciais para reconhecimento de movimentos. Estudos que analisam exercícios sem o uso de pesos ou equipamentos significativamente diferentes de halteres serão excluídos.
+    
+    \item \textbf{Tipo de intervenção}: Serão incluídos estudos que utilizem sensores inerciais, como acelerômetros e giroscópios, para monitoramento e correção de movimentos. Estudos que utilizem outras tecnologias de monitoramento, como câmeras ou sistemas ópticos, serão excluídos, a menos que façam uma comparação direta com sensores inerciais.
+    
+    \item \textbf{Comparação}: Serão incluídos estudos com métodos tradicionais de monitoramento, como acompanhamento por vídeo ou supervisão humana.
+    
+    \item \textbf{Data de publicação}: Apenas estudos publicados nos últimos 6 anos serão incluídos, para garantir a relevância e atualidade das tecnologias investigadas.
+    
+    \item \textbf{Idioma}: Serão incluídos estudos publicados em inglês ou português. Artigos em outros idiomas serão excluídos.
+    
+    \item \textbf{Disponibilidade de dados}: Serão excluídos estudos que não disponibilizam dados suficientes para análise ou que sejam inacessíveis por completo (por exemplo, apenas resumos).
+\end{itemize}
+
+Esses critérios de inclusão e exclusão foram definidos com base na relevância e na aplicabilidade ao tema de monitoramento de exercícios com halteres, buscando garantir que os estudos selecionados respondam adequadamente à questão de pesquisa formulada.
+
+\section{Identificação das Fontes de Informação}
+\label{sec:fontes}
+
+Para garantir que a busca por estudos cubra as principais publicações da área, diversas bases de dados serão consultadas. A seleção dessas fontes de informação visa incluir uma ampla gama de estudos científicos, abrangendo tanto o contexto tecnológico quanto o de saúde, uma vez que o tema envolve tecnologias de sensores aplicadas ao monitoramento e correção de exercícios físicos.
+
+As bases de dados selecionadas incluem:
+
+\begin{itemize}
+    \item \textbf{\href{https://ieeexplore.ieee.org/search/advanced}{IEEE Xplore}}: Relevante para artigos que tratam de sensores inerciais e outras tecnologias aplicadas a sistemas de monitoramento, especialmente no contexto de engenharia e computação.
+    
+    \item \textbf{\href{https://pubmed.ncbi.nlm.nih.gov/advanced/}{PubMed}}: Relevante para a busca de estudos relacionados à saúde, fisioterapia, correção de exercícios e prevenção de lesões, com foco em tecnologias aplicadas à área médica e esportiva.
+    
+    \item \textbf{\href{https://scholar.google.com/}{Google Scholar}}: Será utilizado para busca de literatura cinzenta, como teses, dissertações e relatórios técnicos, que podem não estar indexados em bases de dados comerciais.
+    
+    \item \textbf{\href{https://dl.acm.org/search/advanced}{ACM Digital Library}}: Focada em ciência da computação e sistemas de informação, será útil para pesquisas sobre sistemas inteligentes e tecnologias de monitoramento aplicadas à academia.
+    
+    \item \textbf{\href{https://www.embase.com/landing?status=yellow}{Embase}}: Com foco em ciências biomédicas e farmacêuticas, será útil para encontrar estudos sobre biomecânica, fisioterapia e prevenção de lesões, com ampla cobertura de ensaios clínicos.
+
+\end{itemize}
+
+\section{Estratégia de Busca}
+
+A estratégia de busca será desenvolvida com o objetivo de identificar estudos relacionados ao tema proposto. Para isso, será utilizada uma combinação de termos principais, sinônimos e palavras-chave, associados por operadores booleanos.
+
+A busca será realizada nas bases de dados listados na seção \ref{sec:fontes}. A seguir, está descrita a estratégia geral para a realização da busca:
+
+\begin{itemize}
+    \item Os termos de pesquisa serão estruturados com base nos elementos chave da questão de pesquisa, seguindo a estrutura PICO (População, Intervenção, Comparação e Desfecho).
+    
+    \item Para a população (\textbf{usuários de halteres}), serão utilizados os seguintes termos e sinônimos: \textit{“weightlifting users”, “gym users”, “strength training participants”, “physical activity practitioners”}.
+    
+    \item Para a intervenção (\textbf{sensores inerciais}), os termos e sinônimos incluem: \textit{“inertial sensors”, “IMU sensors”, “accelerometers”, “gyroscopes”}.
+    
+    \item Para a comparação (\textbf{monitoramento por vídeo}), serão usados termos como: \textit{“video monitoring”, “visual tracking”, “camera-based systems”}.
+    
+    \item Para o desfecho (\textbf{reconhecimento e correção de exercícios}), os termos incluem: \textit{“exercise recognition”, “movement recognition”, “exercise correction”, “injury prevention”, “movement correction”, “exercise form improvement”, }.
+    
+    \item Operadores booleanos, como AND e OR, serão utilizados para combinar os termos e sinônimos: 
+    \begin{itemize}
+        \item (\textit{“weightlifting users” OR “gym users” OR “physical activity practitioners”}) AND (\textit{“inertial sensors” OR “IMU sensors” OR “motion tracking sensors” OR “accelerometers” OR “gyroscopes”}) AND (\textit{“exercise recognition” OR “movement recognition” OR “exercise monitoring” OR “exercise correction” OR “injury prevention”}).
+    \end{itemize}
+    
+    \item Além disso, as buscas serão refinadas utilizando filtros de data, limitando os estudos publicados nos últimos 6 anos, e de idioma, restringindo para artigos em inglês e português.
+\end{itemize}
+
+A estratégia será adaptada para cada base de dados, de modo a garantir a adequação dos termos ao mecanismo de busca de cada plataforma. A combinação de sinônimos e operadores booleanos permitirá uma busca ampla e abrangente dos estudos relevantes ao tema proposto.
+
+\end{document}
