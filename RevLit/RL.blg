@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'RL.blg'
+[147] biber-MSWIN64:340> INFO - === 
+[190] Biber.pm:419> INFO - Reading 'RL.bcf'
+[342] Biber.pm:979> INFO - Found 29 citekeys in bib section 0
+[359] Biber.pm:4419> INFO - Processing section 0
+[371] Biber.pm:4610> INFO - Looking for bibtex file 'mestrado_PB_RS.bib' for section 0
+[440] bibtex.pm:1713> INFO - LaTeX decoding ...
+[521] bibtex.pm:1519> INFO - Found BibTeX data source 'mestrado_PB_RS.bib'
+[750] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[750] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[751] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'pt-BR'
+[751] Biber.pm:4245> INFO - No sort tailoring available for locale 'pt-BR'
+[772] bbl.pm:660> INFO - Writing 'RL.bbl' with encoding 'UTF-8'
+[794] bbl.pm:763> INFO - Output to RL.bbl

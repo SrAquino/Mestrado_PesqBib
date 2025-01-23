@@ -1,0 +1,1416 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Mekruksavanich2024}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=53798e626037ab0b6ad5b3074487ae43}{%
+           family={Mekruksavanich},
+           familyi={M\bibinitperiod},
+           given={Sakorn},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cef5237c8a0ef465e10c8999f1141543}{%
+           family={Tancharoen},
+           familyi={T\bibinitperiod},
+           given={Datchakorn},
+           giveni={D\bibinitperiod}}}%
+        {{hash=47acfdcfe44fa55f592cadc6c7adaeb1}{%
+           family={Jitpattanakul},
+           familyi={J\bibinitperiod},
+           given={Anuchit},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{2def20f24ca4995db096498bd57a8994}
+      \strng{fullhash}{e5ee0ec64de674a0eb27586d66e9c71b}
+      \strng{bibnamehash}{e5ee0ec64de674a0eb27586d66e9c71b}
+      \strng{authorbibnamehash}{e5ee0ec64de674a0eb27586d66e9c71b}
+      \strng{authornamehash}{2def20f24ca4995db096498bd57a8994}
+      \strng{authorfullhash}{e5ee0ec64de674a0eb27586d66e9c71b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2024 International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC)}
+      \field{month}{7}
+      \field{title}{Gym Exercise Recognition Using Deep Convolutional and LSTM Neural Network Based on IMU Sensor Data}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/itc-cscc62988.2024.10628426
+      \endverb
+    \endentry
+    \entry{Johnson2021}{article}{}
+      \name{author}{6}{}{%
+        {{hash=efaac7068b1b39998755013c5f9d38f4}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={William\bibnamedelima R.},
+           giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=e66ddb661075e1ec2d86e6cc0fa46aef}{%
+           family={Mian},
+           familyi={M\bibinitperiod},
+           given={Ajmal},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ba89868eb5a815b92db1d11f94ceab7b}{%
+           family={Robinson},
+           familyi={R\bibinitperiod},
+           given={Mark\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=5e5f7e41e4c8f30cbe75a4c36c727e64}{%
+           family={Verheul},
+           familyi={V\bibinitperiod},
+           given={Jasper},
+           giveni={J\bibinitperiod}}}%
+        {{hash=908f44c7cd607f7836b76bf368f3532e}{%
+           family={Lloyd},
+           familyi={L\bibinitperiod},
+           given={David\bibnamedelima G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=6d6667bdcdc3fa8b8e97b2150eed9f2c}{%
+           family={Alderson},
+           familyi={A\bibinitperiod},
+           given={Jacqueline\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{aa47fc12724611f8402d786399a5dcd0}
+      \strng{fullhash}{ce607830560ed9964d78f456e55af9ba}
+      \strng{bibnamehash}{ce607830560ed9964d78f456e55af9ba}
+      \strng{authorbibnamehash}{ce607830560ed9964d78f456e55af9ba}
+      \strng{authornamehash}{aa47fc12724611f8402d786399a5dcd0}
+      \strng{authorfullhash}{ce607830560ed9964d78f456e55af9ba}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1558-2531}
+      \field{journaltitle}{IEEE Transactions on Biomedical Engineering}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Multidimensional Ground Reaction Forces and Moments From Wearable Sensor Accelerations via Deep Learning}
+      \field{volume}{68}
+      \field{year}{2021}
+      \field{pages}{289\bibrangedash 297}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/tbme.2020.3006158
+      \endverb
+    \endentry
+    \entry{Tian2021}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=72f3879f4b882db49db970f3314f3b74}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={Jiacheng},
+           giveni={J\bibinitperiod}}}%
+        {{hash=40506594b8236a27837c19c503917ea4}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Pan},
+           giveni={P\bibinitperiod}}}%
+        {{hash=55eaf3e9c0d2e1f94e8eb05033d0e935}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Fangmin},
+           giveni={F\bibinitperiod}}}%
+        {{hash=ad1506e9f10da2cad4389eac16751647}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Tao},
+           giveni={T\bibinitperiod}}}%
+        {{hash=06828efed1a25bcd5eb7ad471cb51895}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hexiang},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{25c7f6ee008c999097826bf37022a537}
+      \strng{fullhash}{8e8b993d780399f786686c7d217f35f0}
+      \strng{bibnamehash}{8e8b993d780399f786686c7d217f35f0}
+      \strng{authorbibnamehash}{8e8b993d780399f786686c7d217f35f0}
+      \strng{authornamehash}{25c7f6ee008c999097826bf37022a537}
+      \strng{authorfullhash}{8e8b993d780399f786686c7d217f35f0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The Fifth International Conference on Biological Information and Biomedical Engineering}
+      \field{month}{7}
+      \field{series}{BIBE2021}
+      \field{title}{Wearable IMU-based Gym Exercise Recognition Using Data Fusion Methods}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1145/3469678.3469705
+      \endverb
+    \endentry
+    \entry{papadopoulou2023towards}{article}{}
+      \name{author}{1}{}{%
+        {{hash=31fa05a7fedb5c373c1a32da9ae9d6e4}{%
+           family={Papadopoulou},
+           familyi={P\bibinitperiod},
+           given={Panagiota},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{31fa05a7fedb5c373c1a32da9ae9d6e4}
+      \strng{fullhash}{31fa05a7fedb5c373c1a32da9ae9d6e4}
+      \strng{bibnamehash}{31fa05a7fedb5c373c1a32da9ae9d6e4}
+      \strng{authorbibnamehash}{31fa05a7fedb5c373c1a32da9ae9d6e4}
+      \strng{authornamehash}{31fa05a7fedb5c373c1a32da9ae9d6e4}
+      \strng{authorfullhash}{31fa05a7fedb5c373c1a32da9ae9d6e4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Towards a feedback system for upper body bodyweight exercises using multiple inertial measurement units: A user-centred approach}
+      \field{year}{2023}
+    \endentry
+    \entry{Gleadhill2019}{article}{}
+      \name{author}{1}{}{%
+        {{hash=230bfe184789ad2c3122fff5e4c56864}{%
+           family={Gleadhill},
+           familyi={G\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Charles Darwin University}%
+      }
+      \strng{namehash}{230bfe184789ad2c3122fff5e4c56864}
+      \strng{fullhash}{230bfe184789ad2c3122fff5e4c56864}
+      \strng{bibnamehash}{230bfe184789ad2c3122fff5e4c56864}
+      \strng{authorbibnamehash}{230bfe184789ad2c3122fff5e4c56864}
+      \strng{authornamehash}{230bfe184789ad2c3122fff5e4c56864}
+      \strng{authorfullhash}{230bfe184789ad2c3122fff5e4c56864}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Validating new wearable technology methods to semi-automate biomechanical models for primary prevention of low back disorders in the workplace}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.25913/5EF13EBF9DCF9
+      \endverb
+    \endentry
+    \entry{Asghar2023}{article}{}
+      \name{author}{7}{}{%
+        {{hash=58fcb0aae488736217346c146dc4f7f2}{%
+           family={Asghar},
+           familyi={A\bibinitperiod},
+           given={Aamer\bibnamedelima Bilal},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=697097d1487c1ba46fdd161e04dba0bb}{%
+           family={Majeed},
+           familyi={M\bibinitperiod},
+           given={Maham},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b1f410c79ff5f4235804a8deec4e5e1b}{%
+           family={Taseer},
+           familyi={T\bibinitperiod},
+           given={Abdullah},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3bfb04cc73fef32071ab3775378aeeef}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Muhammad\bibnamedelima Burhan},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=923eb78d7ea06d512029ddde878f6645}{%
+           family={Naveed},
+           familyi={N\bibinitperiod},
+           given={Khazina},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c31404bf5782586abbb56f29f4631066}{%
+           family={Jaffery},
+           familyi={J\bibinitperiod},
+           given={Mujtaba\bibnamedelima Hussain},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=caaf85532d43660ca684e7819e2858e5}{%
+           family={Ejsmont},
+           familyi={E\bibinitperiod},
+           given={Krzysztof},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{73f53c85ae55fa5ce8a0fc68b8f5d0ff}
+      \strng{fullhash}{1d5611ef0ae4285a0b0adf38e1c71e12}
+      \strng{bibnamehash}{73f53c85ae55fa5ce8a0fc68b8f5d0ff}
+      \strng{authorbibnamehash}{73f53c85ae55fa5ce8a0fc68b8f5d0ff}
+      \strng{authornamehash}{73f53c85ae55fa5ce8a0fc68b8f5d0ff}
+      \strng{authorfullhash}{1d5611ef0ae4285a0b0adf38e1c71e12}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2169-3536}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Comparative Performance Analysis of Machine Learning Algorithms for Arm and Shoulder Exercises Using Wrist-Worn Band}
+      \field{volume}{11}
+      \field{year}{2023}
+      \field{pages}{111598\bibrangedash 111607}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/access.2023.3323592
+      \endverb
+    \endentry
+    \entry{Qi2019}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=9d6229fa9b4938799f513431355af85b}{%
+           family={Qi},
+           familyi={Q\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=83d8c1a36f3dec2cbd7fdc704910f74c}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Yun},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a9227983b7e4095f9ce2623187e8373b}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Xiyang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=70a3716b51d27c3e5cc0406980464fb1}{%
+           family={Newcombe},
+           familyi={N\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod}}}%
+        {{hash=127c312dd969b55660deebbebbdae5c1}{%
+           family={Simpson},
+           familyi={S\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=72fc0ee82590c0f3f6ebbad2f840ff5e}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Po},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{c3b4d55eea5e1633e5d7c3ce2b611340}
+      \strng{fullhash}{ef3e5b55303d68ecfb49aedc0a01128a}
+      \strng{bibnamehash}{ef3e5b55303d68ecfb49aedc0a01128a}
+      \strng{authorbibnamehash}{ef3e5b55303d68ecfb49aedc0a01128a}
+      \strng{authornamehash}{c3b4d55eea5e1633e5d7c3ce2b611340}
+      \strng{authorfullhash}{ef3e5b55303d68ecfb49aedc0a01128a}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)}
+      \field{month}{7}
+      \field{title}{Experimental Analysis of Artificial Neural Networks Performance for Physical Activity Recognition Using Belt and Wristband Devices}
+      \field{year}{2019}
+      \field{pages}{2492\bibrangedash 2495}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/embc.2019.8856617
+      \endverb
+    \endentry
+    \entry{Qi2020}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=9d6229fa9b4938799f513431355af85b}{%
+           family={Qi},
+           familyi={Q\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=94ec1f0f3f2f01f49b1f26ff31407f08}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Hai-Ning},
+           giveni={H\bibinithyphendelim N\bibinitperiod}}}%
+        {{hash=cb41b55fe800d0e2462d4c49c30882ae}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jianjun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a9227983b7e4095f9ce2623187e8373b}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Xiyang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=70a3716b51d27c3e5cc0406980464fb1}{%
+           family={Newcombe},
+           familyi={N\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod}}}%
+        {{hash=72fc0ee82590c0f3f6ebbad2f840ff5e}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Po},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{c3b4d55eea5e1633e5d7c3ce2b611340}
+      \strng{fullhash}{7aa4dccab2ae09608c50a5c220022d0f}
+      \strng{bibnamehash}{7aa4dccab2ae09608c50a5c220022d0f}
+      \strng{authorbibnamehash}{7aa4dccab2ae09608c50a5c220022d0f}
+      \strng{authornamehash}{c3b4d55eea5e1633e5d7c3ce2b611340}
+      \strng{authorfullhash}{7aa4dccab2ae09608c50a5c220022d0f}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2020 IEEE Intl Conf on Parallel \&amp; Distributed Processing with Applications, Big Data \&amp; Cloud Computing, Sustainable Computing \&amp; Communications, Social Computing \&amp; Networking (ISPA/BDCloud/SocialCom/SustainCom)}
+      \field{month}{12}
+      \field{title}{A Hybrid Hierarchical Model for Accessing Physical Activity Recognition towards Free-living Environments}
+      \field{year}{2020}
+      \field{pages}{1342\bibrangedash 1347}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ispa-bdcloud-socialcom-sustaincom51426.2020.00199
+      \endverb
+    \endentry
+    \entry{Zou2020}{article}{}
+      \name{author}{6}{}{%
+        {{hash=e60cbf2d650ed92a5e56ca0e59fb30a2}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Yongpan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=50e578209e59a4d498fdb91091525255}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4f2606c2d7f9358b186db890a3d67612}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Shicong},
+           giveni={S\bibinitperiod}}}%
+        {{hash=29dd274add92e57854e039937bbe13c4}{%
+           family={Ruby},
+           familyi={R\bibinitperiod},
+           given={Rukhsana},
+           giveni={R\bibinitperiod}}}%
+        {{hash=11f65af06804a949579b57f4da7eac07}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Dian},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4926a245e59dd9bbc690ce1d37efbecf}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Kaishun},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{78214fd525f8dc821aa13a75f088f84a}
+      \strng{fullhash}{bf8d6ad37b7f442b628c02feee017893}
+      \strng{bibnamehash}{bf8d6ad37b7f442b628c02feee017893}
+      \strng{authorbibnamehash}{bf8d6ad37b7f442b628c02feee017893}
+      \strng{authornamehash}{78214fd525f8dc821aa13a75f088f84a}
+      \strng{authorfullhash}{bf8d6ad37b7f442b628c02feee017893}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2372-2541}
+      \field{journaltitle}{IEEE Internet of Things Journal}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{A Low-Cost Smart Glove System for Real-Time Fitness Coaching}
+      \field{volume}{7}
+      \field{year}{2020}
+      \field{pages}{7377\bibrangedash 7391}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/jiot.2020.2983124
+      \endverb
+    \endentry
+    \entry{Ceccarelli2024}{article}{}
+      \name{author}{4}{}{%
+        {{hash=514bf9cda616f40157191e02fb4696a4}{%
+           family={Ceccarelli},
+           familyi={C\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=20c7853b73561e1cc90bebb9231c067e}{%
+           family={Sanz},
+           familyi={S\bibinitperiod},
+           given={Susana},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b977f6d68f9f39898201ab741c998e2a}{%
+           family={Díaz},
+           familyi={D\bibinitperiod},
+           given={Vicente},
+           giveni={V\bibinitperiod}}}%
+        {{hash=5cf2ed21fd302c4adc0c65a8feb06e5f}{%
+           family={Russo},
+           familyi={R\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI AG}%
+      }
+      \strng{namehash}{a765e682adf24dfef7e6de54b050f725}
+      \strng{fullhash}{7f3cfa2fac721cafcf0b52a473bf2b37}
+      \strng{bibnamehash}{7f3cfa2fac721cafcf0b52a473bf2b37}
+      \strng{authorbibnamehash}{7f3cfa2fac721cafcf0b52a473bf2b37}
+      \strng{authornamehash}{a765e682adf24dfef7e6de54b050f725}
+      \strng{authorfullhash}{7f3cfa2fac721cafcf0b52a473bf2b37}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2075-1702}
+      \field{journaltitle}{Machines}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Design and Construction of a Prototype of an Assisting Device for Arm Exercise}
+      \field{volume}{12}
+      \field{year}{2024}
+      \field{pages}{145}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/machines12020145
+      \endverb
+    \endentry
+    \entry{Krauter2024}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=f66e0cbb0792cfe69d4e1991db945859}{%
+           family={Krauter},
+           familyi={K\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=db622a236caab8dff00122a5b7284378}{%
+           family={Angerbauer},
+           familyi={A\bibinitperiod},
+           given={Katrin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=1114ec171dda0160dfd82a62878984f6}{%
+           family={Sousa\bibnamedelima Calepso},
+           familyi={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Aimée},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6f9aba8028ef3e71903d2944ad0bb308}{%
+           family={Achberger},
+           familyi={A\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ae8915de088fb82c324e85dc0e4fb80f}{%
+           family={Mayer},
+           familyi={M\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7613acc9e67abb0fc4d410f2803f868c}{%
+           family={Sedlmair},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{8cdda4386aa7e1d21531d9bedbd71d2d}
+      \strng{fullhash}{eabeade74a62bafa80c030475c8cc2a5}
+      \strng{bibnamehash}{eabeade74a62bafa80c030475c8cc2a5}
+      \strng{authorbibnamehash}{eabeade74a62bafa80c030475c8cc2a5}
+      \strng{authornamehash}{8cdda4386aa7e1d21531d9bedbd71d2d}
+      \strng{authorfullhash}{eabeade74a62bafa80c030475c8cc2a5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the CHI Conference on Human Factors in Computing Systems}
+      \field{month}{5}
+      \field{series}{CHI ’24}
+      \field{title}{Sitting Posture Recognition and Feedback: A Literature Review}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 20}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1145/3613904.3642657
+      \endverb
+    \endentry
+    \entry{Akpa2018}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=1832f1475d0661441a6a9675cc4d29a7}{%
+           family={Akpa},
+           familyi={A\bibinitperiod},
+           given={Elder\bibnamedelimb A.\bibnamedelimi H.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=0d463497bae791afaed3ee714db0d6c4}{%
+           family={Fujiwara},
+           familyi={F\bibinitperiod},
+           given={Masashi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=509f7df12313093755d4857c842b82e6}{%
+           family={Arakawa},
+           familyi={A\bibinitperiod},
+           given={Yutaka},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a9977277ca9378e507138948a4d5c994}{%
+           family={Suwa},
+           familyi={S\bibinitperiod},
+           given={Hirohiko},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f542fe54ad5191dac9025d5f57f68393}{%
+           family={Yasumoto},
+           familyi={Y\bibinitperiod},
+           given={Keiichi},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{3fb7d238a20bdb779e4b914ad17f5734}
+      \strng{fullhash}{3d314d9b5aff0683d75ec25d2fb9a908}
+      \strng{bibnamehash}{3d314d9b5aff0683d75ec25d2fb9a908}
+      \strng{authorbibnamehash}{3d314d9b5aff0683d75ec25d2fb9a908}
+      \strng{authornamehash}{3fb7d238a20bdb779e4b914ad17f5734}
+      \strng{authorfullhash}{3d314d9b5aff0683d75ec25d2fb9a908}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 IEEE International Conference on Pervasive Computing and Communications Workshops (PerCom Workshops)}
+      \field{month}{3}
+      \field{title}{GIFT: Glove for Indoor Fitness Tracking System}
+      \field{year}{2018}
+      \field{pages}{52\bibrangedash 57}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/percomw.2018.8480211
+      \endverb
+    \endentry
+    \entry{Sharshar2022}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=4a84d36251c4683a4115d25d7563fc52}{%
+           family={Sharshar},
+           familyi={S\bibinitperiod},
+           given={Ahmed},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c8faa0e08f8e005f4beb0e49a2f785fb}{%
+           family={Fayez},
+           familyi={F\bibinitperiod},
+           given={Ahmed},
+           giveni={A\bibinitperiod}}}%
+        {{hash=428ecd31c2fe444a5cbd28b875727717}{%
+           family={Eitta},
+           familyi={E\bibinitperiod},
+           given={Ahmed\bibnamedelima Abo},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=5b950d2452f11fdac38837d96d4ab774}{%
+           family={Gomaa},
+           familyi={G\bibinitperiod},
+           given={Walid},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{f80c2ecdb677811d9c76de1a8e287f14}
+      \strng{fullhash}{0cd12dfb350159f02bf6d4d1d55d3a94}
+      \strng{bibnamehash}{0cd12dfb350159f02bf6d4d1d55d3a94}
+      \strng{authorbibnamehash}{0cd12dfb350159f02bf6d4d1d55d3a94}
+      \strng{authornamehash}{f80c2ecdb677811d9c76de1a8e287f14}
+      \strng{authorfullhash}{0cd12dfb350159f02bf6d4d1d55d3a94}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2022 International Joint Conference on Neural Networks (IJCNN)}
+      \field{month}{7}
+      \field{title}{MM-DOS: A Novel Dataset Of Workout Activities}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ijcnn55064.2022.9892589
+      \endverb
+    \endentry
+    \entry{Sharshar2023}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=4a84d36251c4683a4115d25d7563fc52}{%
+           family={Sharshar},
+           familyi={S\bibinitperiod},
+           given={Ahmed},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c81268a150a0f7de0adffc44453f51de}{%
+           family={Eitta},
+           familyi={E\bibinitperiod},
+           given={Ahmed\bibnamedelimb H.\bibnamedelimi Abo},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c8faa0e08f8e005f4beb0e49a2f785fb}{%
+           family={Fayez},
+           familyi={F\bibinitperiod},
+           given={Ahmed},
+           giveni={A\bibinitperiod}}}%
+        {{hash=63a8e8a4937511f76f6af3d4f229e7ea}{%
+           family={Khamis},
+           familyi={K\bibinitperiod},
+           given={Mohamed\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=83c7280bfc428b05e52ae8109050afa1}{%
+           family={Zaky},
+           familyi={Z\bibinitperiod},
+           given={Ahmed\bibnamedelima B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=5b950d2452f11fdac38837d96d4ab774}{%
+           family={Gomaa},
+           familyi={G\bibinitperiod},
+           given={Walid},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{f80c2ecdb677811d9c76de1a8e287f14}
+      \strng{fullhash}{595a52ebec9616005eb2dbabf342c750}
+      \strng{bibnamehash}{595a52ebec9616005eb2dbabf342c750}
+      \strng{authorbibnamehash}{595a52ebec9616005eb2dbabf342c750}
+      \strng{authornamehash}{f80c2ecdb677811d9c76de1a8e287f14}
+      \strng{authorfullhash}{595a52ebec9616005eb2dbabf342c750}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2023 International Joint Conference on Neural Networks (IJCNN)}
+      \field{month}{6}
+      \field{title}{Camera Coach: Activity Recognition and Assessment Using Thermal and RGB Videos}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ijcnn54540.2023.10191379
+      \endverb
+    \endentry
+    \entry{Gandomkar2018}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=fb523ec8baceb25a6c08ed6228ed7e8b}{%
+           family={Gandomkar},
+           familyi={G\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9fb02484d877a978f16d588028b9bd3a}{%
+           family={Sarang},
+           familyi={S\bibinitperiod},
+           given={Reza},
+           giveni={R\bibinitperiod}}}%
+        {{hash=36628306b9e9eb939f73585065eb092f}{%
+           family={Gandomkar},
+           familyi={G\bibinitperiod},
+           given={Ziba},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{bd336186388473865bbb45897f2da1e0}
+      \strng{fullhash}{ecba549f356032894a4a5722c2da319b}
+      \strng{bibnamehash}{ecba549f356032894a4a5722c2da319b}
+      \strng{authorbibnamehash}{ecba549f356032894a4a5722c2da319b}
+      \strng{authornamehash}{bd336186388473865bbb45897f2da1e0}
+      \strng{authorfullhash}{ecba549f356032894a4a5722c2da319b}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Electrical Engineering (ICEE), Iranian Conference on}
+      \field{month}{5}
+      \field{title}{TrainingPal: An Algorithm for Recognition and Counting Popular Exercises Using Smartphone Sensors}
+      \field{year}{2018}
+      \field{pages}{1471\bibrangedash 1476}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/icee.2018.8472444
+      \endverb
+    \endentry
+    \entry{MallolRagolta2021}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=0541a7ffb2e5dc29854bceacada98e5e}{%
+           family={Mallol-Ragolta},
+           familyi={M\bibinithyphendelim R\bibinitperiod},
+           given={Adria},
+           giveni={A\bibinitperiod}}}%
+        {{hash=76812e3177bdafdaa65537a29b0915a1}{%
+           family={Semertzidou},
+           familyi={S\bibinitperiod},
+           given={Anastasia},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b2cdfe4f6a6d30aead026c255c5121cd}{%
+           family={Pateraki},
+           familyi={P\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=eaef5410663e7c9b49d766559d67be5a}{%
+           family={Schuller},
+           familyi={S\bibinitperiod},
+           given={Bjorn},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{4cb2f6d6aa5064d536844cbf9a6cb194}
+      \strng{fullhash}{973d266ce82ea406870a95bbcd7eecca}
+      \strng{bibnamehash}{973d266ce82ea406870a95bbcd7eecca}
+      \strng{authorbibnamehash}{973d266ce82ea406870a95bbcd7eecca}
+      \strng{authornamehash}{4cb2f6d6aa5064d536844cbf9a6cb194}
+      \strng{authorfullhash}{973d266ce82ea406870a95bbcd7eecca}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 16th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2021)}
+      \field{month}{12}
+      \field{title}{harAGE: A Novel Multimodal Smartwatch-based Dataset for Human Activity Recognition}
+      \field{year}{2021}
+      \field{pages}{01\bibrangedash 07}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/fg52635.2021.9666947
+      \endverb
+    \endentry
+    \entry{Hussain2024}{article}{}
+      \name{author}{6}{}{%
+        {{hash=ccca9b3c3d5f6769f11e2f8a26524930}{%
+           family={Hussain},
+           familyi={H\bibinitperiod},
+           given={Afzaal},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9c118161841532b100c3d4d2e27f234f}{%
+           family={Adeel\bibnamedelima Zahid},
+           familyi={A\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e6e84abe38e25b0e858b945277914cfa}{%
+           family={Ahmed},
+           familyi={A\bibinitperiod},
+           given={Usama},
+           giveni={U\bibinitperiod}}}%
+        {{hash=8e08238f3d6548d1eb408b1d795852ba}{%
+           family={Nazeer},
+           familyi={N\bibinitperiod},
+           given={Shahbaz},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f9aa4563fa279c2d04c8ba7a0e32d5c4}{%
+           family={Zafar},
+           familyi={Z\bibinitperiod},
+           given={Kashif},
+           giveni={K\bibinitperiod}}}%
+        {{hash=75385acdb8a9c02e4f0fe72eb77b8463}{%
+           family={Rauf\bibnamedelima Baig},
+           familyi={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Abdul},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{a6a0383e6eea1830d4526ba00e6b9019}
+      \strng{fullhash}{2d09d95c4d29a42de759a679f56351f0}
+      \strng{bibnamehash}{2d09d95c4d29a42de759a679f56351f0}
+      \strng{authorbibnamehash}{2d09d95c4d29a42de759a679f56351f0}
+      \strng{authornamehash}{a6a0383e6eea1830d4526ba00e6b9019}
+      \strng{authorfullhash}{2d09d95c4d29a42de759a679f56351f0}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2169-3536}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Time-Series Data to Refined Insights: A Feature Engineering-Driven Approach to Gym Exercise Recognition}
+      \field{volume}{12}
+      \field{year}{2024}
+      \field{pages}{100343\bibrangedash 100354}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/access.2024.3428309
+      \endverb
+    \endentry
+    \entry{Kwon2021}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a3ae4bf37e09e26932ed641c94db0f81}{%
+           family={Kwon},
+           familyi={K\bibinitperiod},
+           given={Hyeokhyen},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c1ca8e8fb08ff442d00a1bc25094660c}{%
+           family={Abowd},
+           familyi={A\bibinitperiod},
+           given={Gregory\bibnamedelima D.},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=59f56f1d7d1ff90668a2da4e28320845}{%
+           family={Plötz},
+           familyi={P\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI AG}%
+      }
+      \strng{namehash}{519c532c8176bbd4f7ae7bac6f6dca64}
+      \strng{fullhash}{44d030d86b60c6b80120b031d73cbc6e}
+      \strng{bibnamehash}{44d030d86b60c6b80120b031d73cbc6e}
+      \strng{authorbibnamehash}{44d030d86b60c6b80120b031d73cbc6e}
+      \strng{authornamehash}{519c532c8176bbd4f7ae7bac6f6dca64}
+      \strng{authorfullhash}{44d030d86b60c6b80120b031d73cbc6e}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{month}{12}
+      \field{number}{24}
+      \field{title}{Complex Deep Neural Networks from Large Scale Virtual IMU Data for Effective Human Activity Recognition Using Wearables}
+      \field{volume}{21}
+      \field{year}{2021}
+      \field{pages}{8337}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s21248337
+      \endverb
+    \endentry
+    \entry{Hussain2022}{article}{}
+      \name{author}{6}{}{%
+        {{hash=ccca9b3c3d5f6769f11e2f8a26524930}{%
+           family={Hussain},
+           familyi={H\bibinitperiod},
+           given={Afzaal},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f9aa4563fa279c2d04c8ba7a0e32d5c4}{%
+           family={Zafar},
+           familyi={Z\bibinitperiod},
+           given={Kashif},
+           giveni={K\bibinitperiod}}}%
+        {{hash=7cbb092603b89139cc6dc8f08671bed2}{%
+           family={Baig},
+           familyi={B\bibinitperiod},
+           given={Abdul\bibnamedelima Rauf},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=7bc3521a6ba17ccae63b351a645f80b3}{%
+           family={Almakki},
+           familyi={A\bibinitperiod},
+           given={Riyad},
+           giveni={R\bibinitperiod}}}%
+        {{hash=dbea47215eeca700061c57d6e63525f6}{%
+           family={AlSuwaidan},
+           familyi={A\bibinitperiod},
+           given={Lulwah},
+           giveni={L\bibinitperiod}}}%
+        {{hash=03f65371ec012b68c7abdf1ff02798b7}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Shakir},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI AG}%
+      }
+      \strng{namehash}{a6a0383e6eea1830d4526ba00e6b9019}
+      \strng{fullhash}{bbaa867598411b397f8e9bd976e65c8f}
+      \strng{bibnamehash}{bbaa867598411b397f8e9bd976e65c8f}
+      \strng{authorbibnamehash}{bbaa867598411b397f8e9bd976e65c8f}
+      \strng{authornamehash}{a6a0383e6eea1830d4526ba00e6b9019}
+      \strng{authorfullhash}{bbaa867598411b397f8e9bd976e65c8f}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{month}{3}
+      \field{number}{7}
+      \field{title}{Sensor-Based Gym Physical Exercise Recognition: Data Acquisition and Experiments}
+      \field{volume}{22}
+      \field{year}{2022}
+      \field{pages}{2489}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s22072489
+      \endverb
+    \endentry
+    \entry{Moller2012}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{hash=7f30eb9d88b4f64e34b3000f15df64a8}{%
+           family={Moller},
+           familyi={M\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=043fc767a5381f0a48561086681e83c3}{%
+           family={Roalter},
+           familyi={R\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+        {{hash=89f9fea390f05b9e14d3b660c569bfd1}{%
+           family={Diewald},
+           familyi={D\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=88e59f6f79c38316f506344753273d1b}{%
+           family={Scherr},
+           familyi={S\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=83368e7feb7a89c4c00bb9092bf9c5ec}{%
+           family={Kranz},
+           familyi={K\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ada8b8985321c1bce70d8581b379a634}{%
+           family={Hammerla},
+           familyi={H\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod}}}%
+        {{hash=350f4cce628a8f149b0042388a952fa9}{%
+           family={Olivier},
+           familyi={O\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=fb0f7c582b6e0f6fd3c6ddf1cd3de01c}{%
+           family={Plotz},
+           familyi={P\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{31bb53cf3192fceb75e818c00d9a653e}
+      \strng{fullhash}{f67aa6deaa94f6cd833bb4c8e13592c7}
+      \strng{bibnamehash}{31bb53cf3192fceb75e818c00d9a653e}
+      \strng{authorbibnamehash}{31bb53cf3192fceb75e818c00d9a653e}
+      \strng{authornamehash}{31bb53cf3192fceb75e818c00d9a653e}
+      \strng{authorfullhash}{f67aa6deaa94f6cd833bb4c8e13592c7}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2012 IEEE International Conference on Pervasive Computing and Communications}
+      \field{month}{3}
+      \field{title}{GymSkill: A personal trainer for physical exercises}
+      \field{year}{2012}
+      \field{pages}{213\bibrangedash 220}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/percom.2012.6199869
+      \endverb
+    \endentry
+    \entry{Michaud2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=703ae7724c55bebc3d70288aa7734b20}{%
+           family={Michaud},
+           familyi={M\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=719aa5c9cd9ad4d3b9880b16c3fd31a9}{%
+           family={Pérez\bibnamedelima Soto},
+           familyi={P\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=91afb89016539b778cc4bca5d27c33da}{%
+           family={Lugrís},
+           familyi={L\bibinitperiod},
+           given={Urbano},
+           giveni={U\bibinitperiod}}}%
+        {{hash=97a81c3ba35a8f22d46f757f9ff97a01}{%
+           family={Cuadrado},
+           familyi={C\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI AG}%
+      }
+      \strng{namehash}{bc0e29e947bb68fa09ef963c97fbaeae}
+      \strng{fullhash}{2d69095f44544b007f7ad5e06fce1a2f}
+      \strng{bibnamehash}{2d69095f44544b007f7ad5e06fce1a2f}
+      \strng{authorbibnamehash}{2d69095f44544b007f7ad5e06fce1a2f}
+      \strng{authornamehash}{bc0e29e947bb68fa09ef963c97fbaeae}
+      \strng{authorfullhash}{2d69095f44544b007f7ad5e06fce1a2f}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{month}{8}
+      \field{number}{16}
+      \field{title}{Lower Back Injury Prevention and Sensitization of Hip Hinge with Neutral Spine Using Wearable Sensors during Lifting Exercises}
+      \field{volume}{21}
+      \field{year}{2021}
+      \field{pages}{5487}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s21165487
+      \endverb
+    \endentry
+    \entry{Das2017}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=2be80fdc9a37b451dbaa34a0180f9fb2}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={Dipankar},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f0f051eeef467efe2e96fd70f8e8d4c8}{%
+           family={Busetty},
+           familyi={B\bibinitperiod},
+           given={Shiva\bibnamedelima Murthy},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=0c5c608bdb2da368d01d21ad165ae84a}{%
+           family={Bharti},
+           familyi={B\bibinitperiod},
+           given={Vishal},
+           giveni={V\bibinitperiod}}}%
+        {{hash=656dc521634a3f8683046e649b24978b}{%
+           family={Hegde},
+           familyi={H\bibinitperiod},
+           given={Prakhyath\bibnamedelima Kumar},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{3c79bd12a458f1f2c228768085b895cd}
+      \strng{fullhash}{8bde616593d8b4cab7405b089aa5da67}
+      \strng{bibnamehash}{8bde616593d8b4cab7405b089aa5da67}
+      \strng{authorbibnamehash}{8bde616593d8b4cab7405b089aa5da67}
+      \strng{authornamehash}{3c79bd12a458f1f2c228768085b895cd}
+      \strng{authorfullhash}{8bde616593d8b4cab7405b089aa5da67}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 16th IEEE International Conference on Machine Learning and Applications (ICMLA)}
+      \field{month}{12}
+      \field{title}{Strength Training: A Fitness Application for Indoor Based Exercise Recognition and Comfort Analysis}
+      \field{year}{2017}
+      \field{pages}{1126\bibrangedash 1129}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/icmla.2017.00012
+      \endverb
+    \endentry
+    \entry{Islam2021}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=8601dd06fc1a46b26ce6f2a342624176}{%
+           family={Islam},
+           familyi={I\bibinitperiod},
+           given={Noor\bibnamedelima Nafiz},
+           giveni={N\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=a8ab19ed5a70a73f4bb198dbc2d0505b}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Nafiz\bibnamedelima Imtiaz},
+           giveni={N\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=7437dffae21b1c41246ef832280739d8}{%
+           family={Razzak},
+           familyi={R\bibinitperiod},
+           given={Md\bibnamedelima Abdur},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=cb02af89078dd8acd41a46d43ac5ce82}{%
+           family={Islam},
+           familyi={I\bibinitperiod},
+           given={Muhammad\bibnamedelima Nazrul},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{214d2726ed1d739747b57a68748cbc27}
+      \strng{fullhash}{93eea36d815a0fa7782ff8212dd4c4a9}
+      \strng{bibnamehash}{93eea36d815a0fa7782ff8212dd4c4a9}
+      \strng{authorbibnamehash}{93eea36d815a0fa7782ff8212dd4c4a9}
+      \strng{authornamehash}{214d2726ed1d739747b57a68748cbc27}
+      \strng{authorfullhash}{93eea36d815a0fa7782ff8212dd4c4a9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The 23rd International Conference on Information Integration and Web Intelligence}
+      \field{month}{11}
+      \field{series}{iiWAS2021}
+      \field{title}{Design, Development, and Evaluation of a Physical Exercise Monitoring and Managing System for Athletes}
+      \field{year}{2021}
+      \field{pages}{443\bibrangedash 451}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1145/3487664.3487725
+      \endverb
+    \endentry
+    \entry{colpitts2023kinematics}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6b8942dd2477db3503a6cd6f1127883a}{%
+           family={Colpitts},
+           familyi={C\bibinitperiod},
+           given={Alyson},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6b8942dd2477db3503a6cd6f1127883a}
+      \strng{fullhash}{6b8942dd2477db3503a6cd6f1127883a}
+      \strng{bibnamehash}{6b8942dd2477db3503a6cd6f1127883a}
+      \strng{authorbibnamehash}{6b8942dd2477db3503a6cd6f1127883a}
+      \strng{authornamehash}{6b8942dd2477db3503a6cd6f1127883a}
+      \strng{authorfullhash}{6b8942dd2477db3503a6cd6f1127883a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{University of Waterloo}
+      \field{title}{Kinematics-Based Recovery Metrics and Inertial Measurement Units to Monitor Recovery Post-Knee Arthroscopic Surgery: A Case Study}
+      \field{year}{2023}
+    \endentry
+    \entry{Ponton2023}{article}{}
+      \name{author}{5}{}{%
+        {{hash=3439fbf1e57ba7c824cc421345b84501}{%
+           family={Ponton},
+           familyi={P\bibinitperiod},
+           given={Jose\bibnamedelima Luis},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=1d1dbf165318fa4f387b1b4243db1ae3}{%
+           family={Yun},
+           familyi={Y\bibinitperiod},
+           given={Haoran},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3b50a230f9dd108433d683b1417c549f}{%
+           family={Aristidou},
+           familyi={A\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2d9bbaa3578619af4e431fcacbc06bc7}{%
+           family={Andujar},
+           familyi={A\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=81bc8d42da078132b2efe84c01879a83}{%
+           family={Pelechano},
+           familyi={P\bibinitperiod},
+           given={Nuria},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery (ACM)}%
+      }
+      \strng{namehash}{af57c3990f0ee0f2eed04ba2ed0e8de3}
+      \strng{fullhash}{2e2afcb2c0be208ef5b0fc24555f9b28}
+      \strng{bibnamehash}{2e2afcb2c0be208ef5b0fc24555f9b28}
+      \strng{authorbibnamehash}{2e2afcb2c0be208ef5b0fc24555f9b28}
+      \strng{authornamehash}{af57c3990f0ee0f2eed04ba2ed0e8de3}
+      \strng{authorfullhash}{2e2afcb2c0be208ef5b0fc24555f9b28}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1557-7368}
+      \field{journaltitle}{ACM Transactions on Graphics}
+      \field{month}{10}
+      \field{number}{1}
+      \field{title}{SparsePoser: Real-time Full-body Motion Reconstruction from Sparse Data}
+      \field{volume}{43}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 14}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1145/3625264
+      \endverb
+    \endentry
+    \entry{Zhang2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a9eb98478ccc16d1c357958c4ff40dd3}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Wentong},
+           giveni={W\bibinitperiod}}}%
+        {{hash=d9f35e817d7bce230ec50a1c693e681a}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Caixia},
+           giveni={C\bibinitperiod}}}%
+        {{hash=67558ea1e1244442a0fd2c3479440f4c}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Chuan},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{5848c9014aea6779796b539ac0b94481}
+      \strng{fullhash}{e0154d6c509fc5b58cdccaa9ca0f7cae}
+      \strng{bibnamehash}{e0154d6c509fc5b58cdccaa9ca0f7cae}
+      \strng{authorbibnamehash}{e0154d6c509fc5b58cdccaa9ca0f7cae}
+      \strng{authornamehash}{5848c9014aea6779796b539ac0b94481}
+      \strng{authorfullhash}{e0154d6c509fc5b58cdccaa9ca0f7cae}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2169-3536}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Rehabilitation Exercise Recognition and Evaluation Based on Smart Sensors With Deep Learning Framework}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{pages}{77561\bibrangedash 77571}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/access.2020.2989128
+      \endverb
+    \endentry
+    \entry{Simon2023}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=6f35f90a25c438acccba727ea061fe8c}{%
+           family={Simon},
+           familyi={S\bibinitperiod},
+           given={Niko},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1d2a1bda21537525d9c9f35a81e61b29}{%
+           family={Min},
+           familyi={M\bibinitperiod},
+           given={Cheol-Hong},
+           giveni={C\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{b362f10dae2473097e621a6724826fdc}
+      \strng{fullhash}{b362f10dae2473097e621a6724826fdc}
+      \strng{bibnamehash}{b362f10dae2473097e621a6724826fdc}
+      \strng{authorbibnamehash}{b362f10dae2473097e621a6724826fdc}
+      \strng{authornamehash}{b362f10dae2473097e621a6724826fdc}
+      \strng{authorfullhash}{b362f10dae2473097e621a6724826fdc}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2023 IEEE World AI IoT Congress (AIIoT)}
+      \field{month}{6}
+      \field{title}{Features Analysis and Classification of Common Gym Exercises}
+      \field{year}{2023}
+      \field{pages}{0561\bibrangedash 0565}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/aiiot58121.2023.10174414
+      \endverb
+    \endentry
+    \entry{Zhang2018}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=3e9bdcbb8bbc1d52ef1d6e391b4b5a59}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhe},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=b722f401a8db2b5572cbdaba95fa61cc}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Nian},
+           giveni={N\bibinitperiod}}}%
+        {{hash=94f8ccb2274390db9546514be5c44ee6}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{8ad14cfc5ed27379b0a0c53261962111}
+      \strng{fullhash}{c85e3b61a06a0bd76eca31deaf2edcfd}
+      \strng{bibnamehash}{c85e3b61a06a0bd76eca31deaf2edcfd}
+      \strng{authorbibnamehash}{c85e3b61a06a0bd76eca31deaf2edcfd}
+      \strng{authornamehash}{8ad14cfc5ed27379b0a0c53261962111}
+      \strng{authorfullhash}{c85e3b61a06a0bd76eca31deaf2edcfd}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 24th Asia-Pacific Conference on Communications (APCC)}
+      \field{month}{11}
+      \field{title}{Fine-Fit: A Fine-grained Gym Exercises Recognition System}
+      \field{year}{2018}
+      \field{pages}{492\bibrangedash 497}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/apcc.2018.8633473
+      \endverb
+    \endentry
+    \entry{Koskimaki2014}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=570ba276e1bde5ea3b5483c6bf4b074b}{%
+           family={Koskimaki},
+           familyi={K\bibinitperiod},
+           given={Heli},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e9747c9ba7534f62e4fee42c332a19ea}{%
+           family={Siirtola},
+           familyi={S\bibinitperiod},
+           given={Pekka},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{0b6b69084de225427eab3f3e4d1abee1}
+      \strng{fullhash}{0b6b69084de225427eab3f3e4d1abee1}
+      \strng{bibnamehash}{0b6b69084de225427eab3f3e4d1abee1}
+      \strng{authorbibnamehash}{0b6b69084de225427eab3f3e4d1abee1}
+      \strng{authornamehash}{0b6b69084de225427eab3f3e4d1abee1}
+      \strng{authorfullhash}{0b6b69084de225427eab3f3e4d1abee1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2014 IEEE Symposium on Computational Intelligence and Data Mining (CIDM)}
+      \field{month}{12}
+      \field{title}{Recognizing gym exercises using acceleration data from wearable sensors}
+      \field{year}{2014}
+      \field{pages}{321\bibrangedash 328}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/cidm.2014.7008685
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

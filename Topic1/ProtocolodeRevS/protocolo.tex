@@ -3,8 +3,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage[brazil]{babel}                          % Define o idioma para português do Brasil
 \usepackage{csquotes}                               % Para lidar com aspas de maneira apropriada com babel
+\usepackage{ragged2e}                               % Adiciona o pacote para justificação de texto
 
 \usepackage{graphicx}                               % Pacote para inserção de imagens
+\usepackage{pgfplots}                               % Pacote para gráficos
+\pgfplotsset{compat=1.18}                           % Ajuste para a versão atual do pgfplots
+\usepackage{pgf-pie}                                % Gráfico de pizza
+
+
 \usepackage{hyperref}                               % Pacote para links clicáveis
 \usepackage{enumitem}                               % Pacote para personalização de listas
 
@@ -83,7 +89,7 @@ O objetivo deste trabalho é desenvolver o protocolo de uma revisão sistemátic
 
 A escolha do tema é o primeiro passo em uma revisão sistemática. Para este trabalho o tema deve ser relevante para a área de ciência da computação e ter potencial para gerar uma questão de pesquisa específica além de refletir uma lacuna de conhecimento na literatura existente, permitindo que a revisão sistemática forneça novas perspectivas ou uma síntese das evidências disponíveis. Para garantir a relevância, o tema deve estar alinhado aos interesses da comunidade científica e acadêmica, considerando também a disponibilidade de estudos publicados na área. Por fim, o tema deve ser delimitado o suficiente para que a revisão sistemática seja viável, considerando o tempo e os recursos disponíveis para o trabalho.
 
-O tema escolhido para esta revisão sistemática é \textbf{"Sistema de Monitoramento e Correção de Exercícios com Halteres Utilizando Sensores Inerciais para Academias Inteligentes"}. A escolha deste tema se justifica pelas questões levantadas inicialmente: Um sistema de monitoramento utilizando sensores inerciais é relevante no contexto de academias inteligentes? Sensores inerciais conseguem monitorar e corrigir a execução de exercícios físicos de forma tão eficaz quanto outros métodos, como o monitoramento por vídeo? Além disso, quais são as limitações e vantagens do uso dessa tecnologia em comparação a outras formas de monitoramento? Este tema busca investigar se o uso de sensores inerciais é capaz de proporcionar resultados seguros e eficientes no monitoramento de exercícios com halteres, com potencial para melhorar o desempenho dos praticantes e reduzir o risco de lesões.
+O tema escolhido para esta revisão sistemática é \textbf{``Sistema de Monitoramento e Correção de Exercícios com Halteres Utilizando Sensores Inerciais para Academias Inteligentes"}. A escolha deste tema se justifica pelas questões levantadas inicialmente: Um sistema de monitoramento utilizando sensores inerciais é relevante no contexto de academias inteligentes? Sensores inerciais conseguem monitorar e corrigir a execução de exercícios físicos de forma tão eficaz quanto outros métodos, como o monitoramento por vídeo? Além disso, quais são as limitações e vantagens do uso dessa tecnologia em comparação a outras formas de monitoramento? Este tema busca investigar se o uso de sensores inerciais é capaz de proporcionar resultados seguros e eficientes no monitoramento de exercícios com halteres, com potencial para melhorar o desempenho dos praticantes e reduzir o risco de lesões.
 
 Ao explorar essas questões, espera-se que a revisão sistemática forneça uma visão das evidências disponíveis, ajudando a esclarecer o papel dos sensores inerciais no desenvolvimento de academias inteligentes e tecnologias relacionadas ao treinamento físico. Adicionalmente, a realização de uma revisão sistemática sobre esse tema permitirá consolidar o estado atual das pesquisas, identificando lacunas no desenvolvimento tecnológico e novas oportunidades para a aplicação de sensores inerciais.
 
@@ -155,30 +161,199 @@ As bases de dados selecionadas incluem:
 \end{itemize}
 
 \section{Estratégia de Busca}
+\label{sec:estrategia_busca}
 
-A estratégia de busca será desenvolvida com o objetivo de identificar estudos relacionados ao tema proposto. Para isso, será utilizada uma combinação de termos principais, sinônimos e palavras-chave, associados por operadores booleanos.
+A estratégia de busca foi desenvolvida com o objetivo de identificar estudos relacionados ao tema proposto. Para isso, foi utilizada uma combinação de termos principais, sinônimos e palavras-chave, associados por operadores booleanos.
 
-A busca será realizada nas bases de dados listados na seção \ref{sec:fontes}. A seguir, está descrita a estratégia geral para a realização da busca:
+A busca será realizada nas bases de dados listadas na seção \ref{sec:fontes}. A seguir, está descrita a estratégia geral para a realização da busca:
 
 \begin{itemize}
-    \item Os termos de pesquisa serão estruturados com base nos elementos chave da questão de pesquisa, seguindo a estrutura PICO (População, Intervenção, Comparação e Desfecho).
+    \item Os termos de pesquisa foram estruturados com base nos elementos chave da questão de pesquisa, seguindo a estrutura PICO (População, Intervenção e Desfecho).
     
-    \item Para a população (\textbf{usuários de halteres}), serão utilizados os seguintes termos e sinônimos: \textit{“weightlifting users”, “gym users”, “strength training participants”, “physical activity practitioners”}.
+    \item Para a população (\textbf{usuários de halteres}), foram utilizados os seguintes termos e sinônimos: \textit{“weightlifting users”, “gym users”, “strength training participants”, “physical activity practitioners”}.
     
     \item Para a intervenção (\textbf{sensores inerciais}), os termos e sinônimos incluem: \textit{“inertial sensors”, “IMU sensors”, “accelerometers”, “gyroscopes”}.
     
-    \item Para a comparação (\textbf{monitoramento por vídeo}), serão usados termos como: \textit{“video monitoring”, “visual tracking”, “camera-based systems”}.
+    \item Para o desfecho (\textbf{reconhecimento e correção de exercícios}), os termos incluem: \textit{“exercise recognition”, “movement recognition”, “exercise correction”, “injury prevention”, “movement correction”, “exercise form improvement”}.
     
-    \item Para o desfecho (\textbf{reconhecimento e correção de exercícios}), os termos incluem: \textit{“exercise recognition”, “movement recognition”, “exercise correction”, “injury prevention”, “movement correction”, “exercise form improvement”, }.
+    \item Operadores booleanos, como AND e OR, foram utilizados para combinar os termos e sinônimos, resultando nas seguintes strings de busca, uma em inglês e outra em português:
     
-    \item Operadores booleanos, como AND e OR, serão utilizados para combinar os termos e sinônimos: 
     \begin{itemize}
-        \item (\textit{“weightlifting users” OR “gym users” OR “physical activity practitioners”}) AND (\textit{“inertial sensors” OR “IMU sensors” OR “motion tracking sensors” OR “accelerometers” OR “gyroscopes”}) AND (\textit{“exercise recognition” OR “movement recognition” OR “exercise monitoring” OR “exercise correction” OR “injury prevention”}).
+        \item \textbf{Inglês:} \newline
+        \begin{RaggedRight}
+        (weightlifting users OR gym OR strength training participants OR physical activity practitioners) AND (inertial sensors OR IMU sensors OR accelerometers OR gyroscopes) AND (exercise recognition OR movement recognition OR exercise correction OR injury prevention OR movement correction OR exercise form improvement)
+        \end{RaggedRight}
+        
+        \item \textbf{Português:} 
+        \begin{RaggedRight}
+        (musculação OR academia OR treinamento de força OR praticantes de atividade física) AND (sensores inerciais OR sensores IMU OR acelerômetros OR giroscópios) AND (reconhecimento de exercício OR reconhecimento de movimento OR correção de exercício OR prevenção de lesões OR correção de movimento OR melhoria da forma do exercício)
+        \end{RaggedRight}
     \end{itemize}
     
-    \item Além disso, as buscas serão refinadas utilizando filtros de data, limitando os estudos publicados nos últimos 6 anos, e de idioma, restringindo para artigos em inglês e português.
+    \item Além disso, as buscas foram refinadas utilizando filtros de data, limitando os estudos publicados nos últimos 6 anos, e de idioma, restringindo para artigos em inglês e português.
 \end{itemize}
 
-A estratégia será adaptada para cada base de dados, de modo a garantir a adequação dos termos ao mecanismo de busca de cada plataforma. A combinação de sinônimos e operadores booleanos permitirá uma busca ampla e abrangente dos estudos relevantes ao tema proposto.
+A estratégia foi adaptada para cada base de dados, de modo a garantir a adequação dos termos ao mecanismo de busca de cada plataforma. A combinação de sinônimos e operadores booleanos permitiu uma busca abrangente dos estudos relevantes ao tema proposto.
+
+\section{Processo de Seleção de Estudos}
+
+Conforme descrito na Seção \ref{sec:estrategia_busca}, a estratégia de busca foi desenvolvida utilizando uma combinação de termos e sinônimos associados aos elementos chave da questão de pesquisa. 
+A aplicação das strings de busca resultou na identificação de um total de [] artigos em diversas bases de dados, conforme descrito a seguir:
+
+\begin{itemize}
+    \item \textbf{IEEE:} 31 artigos
+    \item \textbf{PubMed:} 11 artigos
+    \item \textbf{Google Acadêmico:} 153 artigos
+    \item \textbf{ACM:} 2047 artigos
+\end{itemize}
+
+Esses resultados foram obtidos com a seguinte string de busca definida na seção \ref{sec:estrategia_busca}, como pode ser observado nas imagens \ref{fig:busca_ieee}, \ref{fig:busca_pubmed}, \ref{fig:busca_google} e \ref{fig:busca_acm}:
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Images/Strings/ieee.png}
+    \caption{Resultados da busca na plataforma ieee}
+    \label{fig:busca_ieee}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Images/Strings/pubmed.png}
+    \caption{Resultados da busca na plataforma PubMed}
+    \label{fig:busca_pubmed}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Images/Strings/googleAcademic.png}
+    \caption{Resultados da busca na plataforma Google Academico}
+    \label{fig:busca_google}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Images/Strings/ACM.png}
+    \caption{Resultados da busca na plataforma ACM}
+    \label{fig:busca_acm}
+\end{figure}
+\newpage
+
+Os resultados obtidos forão primeiramente analisados para determinar a relevância dos estudos em relação aos objetivos da revisão sistemática.Para garantir a viabilidade temporal da revisão, foram estabelecidas regras específicas para limitar a quantidade de artigos selecionados e lidos em cada plataforma:
+
+\begin{itemize}
+    \item \textbf{Quantidade total de artigos selecionados}: foi definido um limite máximo de 40 artigos (com até 10 artigos por plataforma pesquisada).
+    \item \textbf{Quantidade máxima de artigos selecionados por plataforma}: cada plataforma permitiu a seleção de até 20 artigos, conforme a relevância e o alinhamento com o tema proposto.
+    \item \textbf{Limite na leitura de resumos}: a leitura de resumos foi limitada a 60 artigos por plataforma, priorizando aqueles com maior aderência à estratégia de busca definida.
+    \item \textbf{Critério de ordenação por relevância}: os artigos foram organizados de acordo com a relevância, utilizando a opção de ordenação disponível nas próprias plataformas de busca.
+\end{itemize}
+
+Esses critérios justificam a quantidade de artigos selecionados e revisados em cada base. Por exemplo, na IEEE, o número de artigos selecionados foi limitado conforme o critério máximo. No Google Acadêmico, apesar de apenas 10 artigos selecionados, atingiu o limite de triagem inicial de 60 resumos. Na ACM, o número total de artigos selecionados alcançou o limite total estabelecido, com 7 artigos incluídos na revisão. As plataformas foram visitadas na seguinte ordem: \textbf{IEEE}, seguida por \textbf{PubMed}, \textbf{Google Acadêmico} e, por fim, \textbf{ACM}. Na Figura \ref{fig:selecao_estudos} é possível observar a quantidade de artigos resultados pela string de busca, os que tiveram o resumo lido, e os selecionados. Nas figuras \ref{fig:totalencontrado} e \ref{fig:totallido} é possível observar a relação de trabalhos selecionados dentro do total encontrado e do total de resumos lidos.
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            ybar, % Tipo de gráfico de barras
+            bar width=0.4cm,
+            width=\textwidth,
+            height=8cm,
+            ylabel={Número de Artigos},
+            symbolic x coords={IEEE, PubMed, Google Acadêmico, ACM},
+            xtick=data,
+            nodes near coords,
+            enlarge x limits=0.15,
+            ymin=0,
+            legend style={at={(0.5,-0.15)},anchor=north,legend columns=-1},
+            title={Seleção de Artigos nas Diferentes Etapas}
+        ]
+        \addplot coordinates {(IEEE, 31) (PubMed, 11) (Google Acadêmico, 153) (ACM, 2047)};
+        \addplot coordinates {(IEEE, 29) (PubMed, 11) (Google Acadêmico, 60) (ACM, 46)};
+        \addplot coordinates {(IEEE, 20) (PubMed, 4) (Google Acadêmico, 10) (ACM, 7)};
+        \legend{Total Encontrado, Triagem Inicial, Selecionados}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Gráfico das etapas de seleção de artigos por plataforma.}
+    \label{fig:selecao_estudos}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}
+        
+            \node at (0,1.8) {\textbf{Total Encontrado: 2242 trabalhos}};
+            \pie[text=legend, radius=1.5]{
+                93.5/Descartado,
+                6.5/Lidos: 146
+            }
+
+    \end{tikzpicture}
+    \caption{Relação de trabalhos encontrados, lidos e descartados}
+    \label{fig:totalencontrado}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}
+        \begin{scope}[]
+            \node at (0,1.8) {\textbf{Total lido: 146 resumos}};
+            \pie[text=legend, radius=1.5]{
+                72/Descartados,
+                28/Selecionados: 41
+            }
+        \end{scope}
+    \end{tikzpicture}
+    \caption{Relação de trabalhos lidos, selecionados e descartados}
+    \label{fig:totallido}
+\end{figure}
+
+\section{Extração e Análise dos Dados}
+\label{sec:extracao_analise_dados}
+
+Nesta seção, são apresentados os métodos para extração e análise dos dados dos estudos selecionados. O objetivo desta etapa é organizar e sintetizar as informações mais relevantes, de forma a responder às questões de pesquisa e possibilitar uma análise crítica dos resultados disponíveis na literatura.
+
+\subsection{Processo de Extração de Dados}
+
+Para garantir a consistência e a precisão, os dados serão extraídos de cada estudo selecionado seguindo um protocolo padronizado. Esse processo permitirá que as principais características dos estudos sejam comparadas e analisadas de maneira estruturada. Serão coletados os seguintes dados:
+
+\begin{itemize}
+    \item \textbf{Características dos participantes:} informações como idade, nível de experiência com o uso de halteres ou prática de atividades físicas, e outras variáveis demográficas, quando disponíveis.
+    \item \textbf{Métodos utilizados:} tipo de sensores aplicados, configurações de monitoramento e técnicas de coleta de dados.
+    \item \textbf{Resultados principais:} desfechos relacionados ao reconhecimento e correção de exercícios, indicadores de prevenção de lesões e melhorias na execução dos movimentos.
+    \item \textbf{Outros detalhes relevantes:} data de publicação, descrição de parâmetros de comparação (quando houver) e limitações reportadas nos estudos.
+\end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}
+    \begin{axis}[
+        ybar,
+        symbolic x coords={2010, 2012, 2014, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024},
+        xtick=data,
+        ylabel={Número de Trabalhos},
+        xlabel={Ano},
+        ymin=0, ymax=10,
+        bar width=15pt,
+        nodes near coords,
+        enlarge x limits=0.2,
+        grid=major,
+        width=\textwidth, % Ajusta a largura do gráfico para a largura total da página
+        height=0.5\textheight, % Ajusta a altura do gráfico
+        xticklabel style={rotate=45, anchor=north east} % Rotaciona os rótulos do eixo X para não ficarem sobrepostos
+    ]
+    \addplot coordinates {(2017,5) (2018,4) (2019,4) (2020,4) (2021,9) (2022,3) (2023,7) (2024,5)};
+    \end{axis}
+    \end{tikzpicture}
+    \caption{Número de Trabalhos por Ano de publicação}
+    \end{figure}
+
+\subsection{Método de Síntese e Análise dos Dados}
+
+Após a extração, os dados serão organizados para análise de forma a identificar padrões e tendências nos resultados dos estudos. A análise será realizada conforme descrito a seguir:
+
+\begin{itemize}
+    \item \textbf{Análise Qualitativa:} será conduzida uma síntese descritiva dos estudos, abordando os métodos utilizados, os resultados observados e as limitações apontadas por cada autor. A análise qualitativa permitirá uma avaliação contextual das abordagens para reconhecimento e correção de exercícios com sensores inerciais.
+    
+    \item \textbf{Análise Quantitativa:} quando os dados numéricos comparáveis estiverem disponíveis, uma análise quantitativa será realizada. Essa abordagem visa quantificar o impacto dos métodos analisados e, se aplicável, identificar a eficácia dos sensores na correção de movimentos e prevenção de lesões.
+\end{itemize}
 
 \end{document}
