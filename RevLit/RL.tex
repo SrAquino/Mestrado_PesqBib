@@ -9,6 +9,9 @@
 \usepackage{longtable}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepackage{graphicx}                               % Pacote para inserção de imagens
+\pgfplotsset{compat=1.18}                           % Ajuste para a versão atual do pgfplots
+\usepackage{pgf-pie}                                % Gráfico de pizza
 
 
 
@@ -148,9 +151,42 @@ A aplicação das strings de busca resultou na identificação de um total de 66
 \end{tikzpicture}
 
 
+
+
 \subsection{Triagem de Estudos}
 A triagem foi realizada com base na leitura dos títulos, resumos e conclusões dos artigos identificados. Grande parte dos trabalhos foi descartada por não apresentar o artigo completo disponível. Após essa etapa, dos 663 artigos iniciais, foi possível obter acesso completo a 384 artigos, dos quais, após a triagem inicial, 41 foram selecionados para análise detalhada.
 
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}
+        
+            \node at (0,1.8) {\textbf{Total Encontrado: 663 trabalhos}};
+            \pie[text=legend, radius=1.5]{
+                42/Acesso restrito,
+                58/Material disponível: 384 artigos
+            }
+
+    \end{tikzpicture}
+    \caption{Relação de trabalhos encontrados, com acesso restrito e disponíveis}
+    \label{fig:totalencontrado}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}
+        \begin{scope}[]
+            \node at (0,1.8) {\textbf{Total lido: 384 resumos}};
+            \pie[text=legend, radius=1.5]{
+                89/Descartados,
+                11/Selecionados: 41 artigos
+            }
+        \end{scope}
+    \end{tikzpicture}
+    \caption{Relação de trabalhos lidos, selecionados e descartados}
+    \label{fig:totallido}
+\end{figure}
+
+\newpage
 \section{Discussão dos Estudos Selecionados}
 
 \begin{figure}[htbp]
@@ -176,8 +212,6 @@ A triagem foi realizada com base na leitura dos títulos, resumos e conclusões 
     \end{tikzpicture}
     \caption{Número de Trabalhos por Ano de publicação}
     \end{figure}
-
-
 
 \begin{longtable}{|p{3cm}|p{6cm}|p{3.4cm}|}
     \caption{Categorias de Análise e Trabalhos Associados} \label{tab:categorias} \\
@@ -227,6 +261,7 @@ A triagem foi realizada com base na leitura dos títulos, resumos e conclusões 
 \setlength{\tabcolsep}{5pt}
 
 \begin{longtable}{|p{3cm}|p{6cm}|p{3.4cm}|}
+    \caption{Dificuldades encontradas e Trabalhos Associados} \label{tab:dificuldades} \\
 \hline
 \textbf{Categoria} & \textbf{Descrição} & \textbf{Fontes Associadas} \\ \hline
 \endfirsthead
@@ -264,9 +299,40 @@ A triagem foi realizada com base na leitura dos títulos, resumos e conclusões 
 
 \end{longtable}
 
+\pgfplotsset{compat=1.17}
+
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            ybar,
+            bar width=0.5cm,
+            enlarge x limits=0.25,
+            ylabel={Número de Fontes},
+            xlabel={Tecnologias},
+            symbolic x coords={Sensores Inerciais, Sensores de pressão, Câmeras de profundidade de visão, Câmeras térmicas, Plataformas de hardware},
+            xtick=data,
+            nodes near coords,
+            ymin=0,
+            ymax=10,
+            x tick label style={rotate=45, anchor=east}
+        ]
+            \addplot coordinates {
+                (Sensores Inerciais, 9)
+                (Sensores de pressão, 2)
+                (Câmeras de profundidade de visão, 2)
+                (Câmeras térmicas, 1)
+                (Plataformas de hardware, 2)
+            };
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Distribuição do número de fontes por tecnologia.}
+    \label{fig:tecnologias}
+\end{figure}
+
 Analise criticamente os achados de cada estudo. Identifique lacunas na literatura.
 
-\section*{Avaliação da Qualidade}
+\section{Avaliação da Qualidade}
 Explique os critérios utilizados para avaliar a qualidade dos estudos. Resuma os resultados dessa avaliação.
 
 \section{Conclusão}
