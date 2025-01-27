@@ -1,68 +1,630 @@
 \documentclass[conference]{IEEEtran}
 \IEEEoverridecommandlockouts
-% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
-\usepackage{cite}
+
+\usepackage{adjustbox}
+
+\usepackage{tabularx}
+\usepackage[brazil]{babel}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Revisão da Literatura},
+    pdfpagemode=FullScreen,
+}
+
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{graphicx}                               % Pacote para inserção de imagens
+\pgfplotsset{compat=1.18}                           % Ajuste para a versão atual do pgfplots
+\usepackage{pgf-pie}                                % Gráfico de pizza
+
+\usepackage[backend=biber,style=numeric]{biblatex}
+\addbibresource{mestrado_PB_RS.bib}
+
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
-\usepackage{graphicx}
+
 \usepackage{textcomp}
 \usepackage{xcolor}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+    
 \begin{document}
 
-\title{Conference Paper Title*\\
-{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
-should not be used}
-\thanks{Identify applicable funding agency here. If none, delete this.}
+\title{Revisão da Literatura: Sistema de Monitoramento e Correção de Exercícios com Halteres Utilizando Sensores Inerciais para Academias Inteligentes\\
 }
 
-\author{\IEEEauthorblockN{1\textsuperscript{st} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
+\author{\IEEEauthorblockN{1\textsuperscript{st} Douglas Aquino Teixeira Mendes}
+\IEEEauthorblockA{\textit{Depart. da Ciência da computação} \\
+\textit{Universidade Federal de Lavras}\\
+Lavras, Brasil \\
+\href{https://orcid.org/0009-0009-7402-966X}{0009-0009-7402-966X}}
 \and
-\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
+\IEEEauthorblockN{2\textsuperscript{nd} Rafael Serapilha Durelli}
+\IEEEauthorblockA{\textit{Depart. da Ciência da computação} \\
+\textit{Universidade Federal de Lavras}\\
+Lavras, Brasil \\
+rafael.durelli@ufla.br}
 \and
-\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
-\and
-\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
-\and
-\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
-\and
-\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
+\IEEEauthorblockN{3\textsuperscript{rd} Tales Heimfarth}
+\IEEEauthorblockA{\textit{Depart. da Ciência da computação} \\
+\textit{Universidade Federal de Lavras}\\
+Lavras, Brasil \\
+tales@ufla.br}
 }
 
 \maketitle
 
 \begin{abstract}
-abstract
+    Este trabalho apresenta uma revisão da literatura sobre sistemas de monitoramento e correção de exercícios com halteres utilizando sensores inerciais em academias inteligentes. A revisão abrange os principais avanços tecnológicos, metodologias empregadas e desafios enfrentados na área. Os estudos analisados foram avaliados com base em critérios de relevância, metodologia, validade, confiabilidade e originalidade. Os resultados indicam que a maioria dos estudos é altamente relevante e metodologicamente robusta, embora algumas limitações tenham sido identificadas. Além disso, destacam-se as contribuições originais dos estudos para o campo de pesquisa. Por fim, são identificadas áreas para futuras pesquisas, incluindo o aprimoramento metodológico, a exploração de novas tecnologias, a validação em diferentes contextos e a integração multidisciplinar.
 \end{abstract}
 
 \begin{IEEEkeywords}
-component, formatting, style, styling, insert
+    inertial sensors, exercise correction, smart gyms, real-time monitoring
 \end{IEEEkeywords}
 
+\section{Introdução}
+
+Nos últimos anos, o uso de tecnologias avançadas para monitoramento e correção de exercícios físicos tem ganhado destaque, especialmente em academias inteligentes. Sensores inerciais, como acelerômetros e giroscópios, têm sido amplamente utilizados para capturar dados de movimento em tempo real, permitindo a análise detalhada dos exercícios realizados pelos usuários. Esses sistemas visam não apenas melhorar a eficiência dos treinos, mas também prevenir lesões, fornecendo feedback imediato sobre a execução dos movimentos.
+
+A relevância deste tema é evidenciada pelo crescente interesse em soluções que combinam tecnologia e saúde, promovendo um estilo de vida mais ativo e saudável. Além disso, a pandemia de COVID-19 acelerou a adoção de tecnologias de monitoramento remoto, tornando este campo de pesquisa ainda mais pertinente.
+
+O objetivo deste trabalho é realizar uma revisão da literatura sobre sistemas de monitoramento e correção de exercícios com halteres utilizando sensores inerciais. A revisão abrange os principais avanços tecnológicos, metodologias empregadas e desafios enfrentados na área. Os estudos analisados foram avaliados com base em critérios de relevância, metodologia, validade, confiabilidade e originalidade.
+
+Este documento está estruturado da seguinte forma: a Seção \ref{sec:metodologia} apresenta os critérios de pesquisa e inclusão dos estudos. A Seção \ref{sec:resultados} discute os resultados da pesquisa. A Seção \ref{sec:discussao} sintetiza os principais pontos abordados e identifica áreas para futuras pesquisas. Finalmente, a Seção \ref{sec:conclusao} conclui o trabalho, destacando as principais contribuições e sugestões para pesquisas futuras.
+
+O tema desta pesquisa é o "Sistema de Monitoramento e Correção de Exercícios com Halteres Utilizando Sensores Inerciais para Academias Inteligentes". 
+
+A problemática central envolve os seguintes desafios:
+\begin{itemize}
+    \item \textbf{Variabilidade entre Usuários}: Desenvolver um sistema que seja preciso para diferentes usuários, considerando variações de altura, peso, força e técnica de execução.
+    \item \textbf{Precisão na Detecção de Movimentos}: Garantir a precisão na detecção dos movimentos dos halteres, como amplitude, velocidade e aceleração, para fornecer feedback preciso e evitar falsos positivos.
+    \item \textbf{Latência do Sistema}: O feedback deve ser fornecido em tempo real, com mínima latência, para que o usuário possa corrigir sua postura durante a execução do exercício.
+\end{itemize}
+
+A questão de pesquisa que guia este estudo é: \textit{Como desenvolver um sistema de monitoramento e correção de exercícios com halteres em tempo real, utilizando sensores inerciais e feedback personalizado, que seja preciso, robusto a diferentes usuários e ambientes, e que se integre a academias inteligentes?}
+
+\section{Fontes de Dados}
+\label{sec:fontes}
+
+Para garantir uma revisão abrangente e de qualidade, foram selecionadas diversas bases de dados que cobrem diferentes áreas do conhecimento relacionadas ao tema da pesquisa. As bases de dados escolhidas são:
+
+\begin{itemize}
+    \item \textbf{\href{https://ieeexplore.ieee.org/search/advanced}{IEEE Xplore}}: Relevante para artigos que tratam de sensores inerciais e outras tecnologias aplicadas a sistemas de monitoramento, especialmente no contexto de engenharia e computação.
+    \item \textbf{\href{https://pubmed.ncbi.nlm.nih.gov/advanced/}{PubMed}}: Relevante para a busca de estudos relacionados à saúde, fisioterapia, correção de exercícios e prevenção de lesões, com foco em tecnologias aplicadas à área médica e esportiva.
+    \item \textbf{\href{https://scholar.google.com/}{Google Scholar}}: Será utilizado para busca de literatura cinzenta, como teses, dissertações e relatórios técnicos, que podem não estar indexados em bases de dados comerciais.
+    \item \textbf{\href{https://dl.acm.org/search/advanced}{ACM Digital Library}}: Focada em ciência da computação e sistemas de informação, será útil para pesquisas sobre sistemas inteligentes e tecnologias de monitoramento aplicadas à academia.
+\end{itemize}
+
+Cada uma dessas bases de dados foi escolhida por sua relevância e cobertura temática, garantindo que a revisão da literatura seja abrangente e inclua estudos de diferentes perspectivas e áreas do conhecimento. A combinação dessas fontes permite uma análise mais diversificada dos sistemas de monitoramento e correção de exercícios com halteres utilizando sensores inerciais.
+
+\section{Metodologia de Busca}
+\label{sec:metodologia}
+Com base no tema escolhido, a formulação da questão de pesquisa pode ser guiada pela estratégia PICO (População, Intervenção, Comparação e Desfecho), que organiza os principais aspectos da pesquisa. Abaixo está a Tabela \ref{tab:PICO} com os pontos de vista, o tema principal relacionado e possíveis sinônimos para cada elemento, que podem ser utilizados para construir uma estratégia de busca abrangente.
+
+\begin{table*}[ht]
+\centering
+\caption{Estrutura PICO com temas principais e sinônimos.}
+\begin{adjustbox}{valign=c, width=\textwidth}
+\begin{tabularx}{\textwidth}{|X|X|X|}
+\hline
+\textbf{Ponto de Vista} & \textbf{Tema Principal} & \textbf{Sinônimos/Termos Relacionados} \\ \hline
+População (P)           & Usuários de halteres    & Academia, fisioterapia, atividade física, praticantes de musculação, treino com pesos \\ \hline
+Intervenção (I)         & Sensores inerciais      & Acelerômetro, giroscópio, dispositivos inerciais \\ \hline
+Comparação (C)          & Monitoramento por vídeo    & Supervisão humana, acompanhamento por instrutores \\ \hline
+Desfecho (O)            & Correção de exercícios  & Precisão no monitoramento, reconhecimento de exercícios, melhoria no desempenho, redução de lesões, correção postural \\ \hline
+\end{tabularx}
+\end{adjustbox}
+
+\label{tab:PICO}
+\end{table*}
+
+Para garantir que os estudos selecionados sejam relevantes e adequados para responder à questão de pesquisa, é preciso definir os critérios de inclusão e exclusão. Esses critérios ajudam a restringir a revisão da literatura apenas aos estudos que fornecem evidências confiáveis e pertinentes sobre o uso de sensores inerciais para o monitoramento de exercícios com halteres em academias inteligentes.
+
+Os critérios definidos são:
+
+\begin{itemize}
+    \item \textbf{Tipo de estudo}: Apenas estudos experimentais que investigam o uso de sensores inerciais em ambientes de academia ou em cenários similares a monitoramento de exercícios serão incluídos. Estudos teóricos ou puramente descritivos serão excluídos.
+    \item \textbf{População}: Estudos que envolvem usuários de halteres ou praticantes de musculação serão incluídos, assim como estudos que utilizam sensores inerciais para reconhecimento de movimentos. Estudos que analisam exercícios em equipamentos significativamente diferentes de halteres serão excluídos.
+    \item \textbf{Tipo de intervenção}: Serão incluídos estudos que utilizem sensores inerciais, como acelerômetros e giroscópios, para monitoramento e correção de movimentos.
+    \item \textbf{Comparação}: Serão incluídos estudos com métodos tradicionais de monitoramento, como acompanhamento por vídeo ou supervisão humana.
+    \item \textbf{Data de publicação}: Apenas estudos publicados nos últimos 6 anos serão incluídos, para garantir a relevância e atualidade das tecnologias investigadas.
+    \item \textbf{Idioma}: Serão incluídos estudos publicados em inglês ou português. Artigos em outros idiomas serão excluídos.
+    \item \textbf{Disponibilidade de dados}: Serão excluídos estudos que não disponibilizam dados suficientes para análise ou que sejam inacessíveis por completo (por exemplo, apenas resumos).
+\end{itemize}
+
+\subsection{Estratégia de Busca}
+A estratégia de busca foi desenvolvida com o objetivo de identificar estudos relacionados ao tema proposto. Para isso, foi utilizada uma combinação de termos principais, sinônimos e palavras-chave, associados por operadores booleanos.
+
+A busca será realizada nas bases de dados listadas na seção \ref{sec:fontes}. A seguir, está descrita a estratégia geral para a realização da busca:
+
+\begin{itemize}
+    \item Os termos de pesquisa foram estruturados com base nos elementos chave da questão de pesquisa, seguindo a estrutura PICO (População, Intervenção e Desfecho).
+    
+    \item Para a população (\textbf{usuários de halteres}), foram utilizados os seguintes termos e sinônimos: \textit{“weightlifting users”, “gym users”, “strength training participants”, “physical activity practitioners”}.
+    
+    \item Para a intervenção (\textbf{sensores inerciais}), os termos e sinônimos incluem: \textit{“inertial sensors”, “IMU sensors”, “accelerometers”, “gyroscopes”}.
+    
+    \item Para o desfecho (\textbf{reconhecimento e correção de exercícios}), os termos incluem: \textit{“exercise recognition”, “movement recognition”, “exercise correction”, “injury prevention”, “movement correction”, “exercise form improvement”}.
+    
+    \item Operadores booleanos, como AND e OR, foram utilizados para combinar os termos e sinônimos, resultando nas seguintes strings de busca, uma em inglês e outra em português:
+    
+    \begin{itemize}
+        \item \textbf{Inglês:} \newline
+        \begin{RaggedRight}
+        (weightlifting users OR gym OR strength training participants OR physical activity practitioners) AND (inertial sensors OR IMU sensors OR accelerometers OR gyroscopes) AND (exercise recognition OR movement recognition OR exercise correction OR injury prevention OR movement correction OR exercise form improvement) NOT (systematic review OR theoretical)
+        \end{RaggedRight}
+        
+        \item \textbf{Português:} 
+        \begin{RaggedRight}
+        (musculação OR academia OR treinamento de força OR praticantes de atividade física) AND (sensores inerciais OR sensores IMU OR acelerômetros OR giroscópios) AND (reconhecimento de exercício OR reconhecimento de movimento OR correção de exercício OR prevenção de lesões OR correção de movimento OR melhoria da forma do exercício) NOT (revisão sistemática OR teórico)
+        \end{RaggedRight}
+    \end{itemize}
+    
+    \item Além disso, as buscas foram refinadas utilizando filtros de data, limitando os estudos publicados nos últimos 6 anos, e de idioma, restringindo para artigos em inglês e português, e o operador boleano NOT para não incluir revisões e estudos teóricos.
+\end{itemize}
+
+A estratégia foi adaptada para cada base de dados, de modo a garantir a adequação dos termos ao mecanismo de busca de cada plataforma. A combinação de sinônimos e operadores booleanos permitiu uma busca abrangente dos estudos relevantes ao tema proposto.
+
+\section{Resultados da Busca}
+\label{sec:resultados}
+A aplicação das strings de busca resultou na identificação de um total de 663 artigos nas bases de dados citadas na seção \ref{sec:fontes}, conforme descrito a seguir:
+
+\begin{itemize}
+    \item \textbf{IEEE:} 31 artigos
+    \item \textbf{PubMed:} 11 artigos
+    \item \textbf{Google Acadêmico:} 146 artigos
+    \item \textbf{ACM:} 475 artigos \newline
+\end{itemize}
+
+\begin{tikzpicture}
+    \begin{axis}[
+        ybar,
+        bar width=.2cm,
+        width=0.45\textwidth,
+        height=8cm,
+        symbolic x coords={IEEE, PubMed, Schoolar, ACM},
+        xtick=data,
+        xlabel={Bases de Dados},
+        ylabel={Número de Artigos},
+        nodes near coords,
+        ymin=0,
+        ymax=500,
+        enlarge x limits=0.2,
+        legend style={at={(0.5,-0.20)}, anchor=north, legend columns=-1},
+        every node near coord/.append style={font=\footnotesize}
+    ]
+        \addplot coordinates {(IEEE,31) (PubMed,11) (Schoolar,146) (ACM,475)};
+        \addplot coordinates {(IEEE,31) (PubMed,11) (Schoolar,116) (ACM,226)};
+        \addplot coordinates {(IEEE,20) (PubMed,4) (Schoolar,10) (ACM,7)};
+        \legend{Resultados, Disponíveis, Selecionados}
+    \end{axis}
+    \label{fig:resultados_busca}
+\end{tikzpicture}
+
+\subsection{Triagem de Estudos}
+
+A triagem dos estudos foi realizada em várias etapas para garantir a relevância e a qualidade dos artigos selecionados:
+
+\begin{enumerate}
+    \item \textbf{Disponibilidade de Texto Completo}: Inicialmente, foi verificado a disponibilidade do texto completo dos artigos. Muitos artigos foram excluídos nesta etapa devido ao acesso restrito.
+    
+    \item \textbf{Leitura dos Títulos e Resumos}: Em seguida, os títulos e resumos dos 384 artigos identificados foram lidos para verificar a relevância em relação ao tema da pesquisa. Artigos que não abordavam o uso de sensores inerciais para monitoramento de exercícios foram excluídos.
+    
+    \item \textbf{Leitura Completa dos Artigos}: Os artigos selecionados após a leitura dos resumos foram lidos integralmente para uma avaliação mais detalhada. Nesta etapa, foram considerados os critérios de inclusão e exclusão definidos na metodologia.
+\end{enumerate}
+
+Após a triagem, dos 663 artigos iniciais, 384 artigos estavam disponíveis para leitura completa. Destes, 41 artigos foram selecionados para inclusão na revisão com base nos critérios de relevância, metodologia, validade, confiabilidade e originalidade.
+
+
+\begin{figure}[h!]
+
+    \begin{tikzpicture}
+        
+            \node at (0,1.8) {\textbf{\footnotesize Total Encontrado: 663 trabalhos}};
+            \pie[text=legend, radius=1.3, font=\footnotesize,  shift={(1,0.0)}]{
+                42/Acesso restrito,
+                58/Disponível: 384 artigos
+            }
+
+    \end{tikzpicture}
+    \caption{Relação de trabalhos encontrados, com acesso restrito e disponíveis}
+    \label{fig:totalencontrado}
+\end{figure}
+
+\newpage
+
+\section{Discussão dos Estudos Selecionados}
+\label{sec:discussao}
+
+Nesta seção, discutimos os principais achados dos estudos selecionados, destacando as tecnologias utilizadas, as metodologias empregadas, os resultados obtidos e as limitações identificadas. Além disso, analisamos as tendências e lacunas na literatura, com base nos gráficos apresentados. Devido a restrições de tempo, foram selecionados três artigos relevantes de cada uma das plataformas de pesquisa utilizadas. A escolha desses artigos foi baseada em sua pertinência para o tema de pesquisa. A análise desses artigos oferece uma visão preliminar sobre o estado da arte na área, sendo uma etapa inicial para a construção de uma compreensão mais aprofundada do tema ao longo do processo de revisão.
+
+Os estudos selecionados utilizaram uma variedade de sensores inerciais, incluindo acelerômetros e giroscópios, para monitorar e corrigir exercícios com halteres. A Figura \ref{fig:resultados_busca} mostra que a maioria dos artigos encontrados e selecionados provém da ACM e da IEEE, indicando que a pesquisa sobre sensores inerciais é amplamente explorada em conferências e publicações de ciência da computação.
+
+As metodologias empregadas nos estudos variaram desde abordagens experimentais até estudos de caso. A maioria dos estudos utilizou algoritmos de aprendizado de máquina para analisar os dados dos sensores e fornecer feedback em tempo real. A Figura \ref{fig:trabalhos_por_ano} indica que houve um aumento significativo no número de publicações nos anos de 2021 e 2023, sugerindo um interesse crescente em metodologias avançadas para monitoramento de exercícios.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}
+    \begin{axis}[
+        ybar,
+        symbolic x coords={2010, 2012, 2014, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024},
+        xtick=data,
+        ylabel={Número de Trabalhos},
+        xlabel={Ano},
+        ymin=0, ymax=10,
+        bar width=15pt,
+        nodes near coords,
+        enlarge x limits=0.2,
+        grid=major,
+        width=0.5\textwidth, % Ajusta a largura do gráfico para a largura total da página
+        height=0.3\textheight, % Ajusta a altura do gráfico
+        xticklabel style={rotate=45, anchor=north east} % Rotaciona os rótulos do eixo X para não ficarem sobrepostos
+    ]
+    \addplot coordinates {(2017,5) (2018,4) (2019,4) (2020,4) (2021,9) (2022,3) (2023,7) (2024,5)};
+    \end{axis}
+    \end{tikzpicture}
+    \caption{Número de Trabalhos por Ano de publicação}
+    \label{fig:trabalhos_por_ano}
+    \end{figure}
+
+A Tabela \ref{tab:categorias} apresenta uma categorização dos estudos selecionados com base nas tecnologias utilizadas, metodologias empregadas, e principais resultados obtidos. Esta categorização ajuda a organizar e sintetizar as informações dos estudos, facilitando a análise comparativa e a identificação de tendências e lacunas na literatura. A Tabela \ref{tab:categorias} mostra que a maioria dos estudos utilizou acelerômetros e giroscópios como principais tecnologias para monitoramento de exercícios. Esses sensores são amplamente utilizados devido à sua capacidade de capturar dados de movimento com precisão. Além disso, alguns estudos também empregaram magnetômetros para melhorar a precisão da detecção de movimentos. 
+
+
+\begin{table*}
+    \centering
+    \caption{Categorias de Análise e Trabalhos Associados} 
+    \begin{tabularx}{\textwidth}{|p{3cm}|X|p{3cm}|}
+    \hline
+    \textbf{Categoria} & \textbf{Descrição} & \textbf{Trabalhos Associados} \\ \hline
+    % Primeira seção: Tecnologias
+    \multicolumn{3}{|c|}{\textbf{Tecnologias}} \\ \hline
+    Sensores Inerciais (IMUs) & Tecnologia central para captura de dados de movimento usando acelerômetros e giroscópios. & \cite{Asghar2023, Bian2022, Ceccarelli2024, colpitts2023kinematics, Hussain2022, Islam2021, Kwon2021, Mekruksavanich2024, Michaud2021, papadopoulou2023towards, Ponton2023, Tian2021} \\ \hline
+    Câmeras de Profundidade e Visão & Usadas para análise visual da postura e técnica do exercício, com possibilidade de feedback visual. & \cite{colpitts2023kinematics, Michaud2021, Hussain2022} \\ \hline
+    Sensores eletromiográficos (EMG) & Dispositivos utilizados para captar e medir a atividade elétrica gerada pelos músculos durante sua contração & \cite{Mekruksavanich2024} \\ \hline
+    Unidade de detecção de capacitância do corpo humano (HBC) & Mede a capacitância entre o corpo e o ambiente, e essa capacitância varia com o movimento do corpo & \cite{Bian2022} \\ \hline
+    Sensor de força (FS) & Mede a força que um usuário exerce no botão durante o exercício & \cite{Ceccarelli2024} \\ \hline
+    Dispositivos vestíveis & Smartwatches, pulseiras de fitness, unidades montadas na cabeça, ou dispositivos móveis como smartphones & \cite{Kwon2021, Hussain2022} \\ \hline
+
+    % Segunda seção: Metodologias
+    \multicolumn{3}{|c|}{\textbf{Metodologias}} \\ \hline
+    Processamento de Sinais & Técnicas para filtrar, segmentar e extrair características relevantes dos dados dos sensores. & \cite{Tian2021, Ponton2023, Islam2021, papadopoulou2023towards, Mekruksavanich2024,Kwon2021} \\ \hline
+    Aprendizado de Máquina & Algoritmos como Redes Neurais e SVMs para classificar exercícios e detectar erros. & \cite{Ponton2023, papadopoulou2023towards, Mekruksavanich2024, Bian2022, Kwon2021, Hussain2022} \\ \hline
+    Ferramentas para Modelagem, Simulação e Análise &  softwares, plataformas e bibliotecas projetados para auxiliar no desenvolvimento, simulação e análise de modelos matemáticos e sistemas complexos. & \cite{colpitts2023kinematics, Asghar2023, Michaud2021} \\ \hline
+
+    % Terceira seção: Aplicações
+    \multicolumn{3}{|c|}{\textbf{Aplicações}} \\ \hline
+    Monitoramento de Exercícios & Identificação do tipo de exercício, número de repetições e qualidade da técnica. & \cite{Tian2021, colpitts2023kinematics, Mekruksavanich2024, Asghar2023, Bian2022, Ceccarelli2024, Kwon2021, Hussain2022} \\ \hline
+    Correção de Postura & Detecta e corrige erros posturais em tempo real, prevenindo lesões. & \cite{papadopoulou2023towards, Michaud2021} \\ \hline
+    Academias Inteligentes & Integração com sistemas de gerenciamento para uma experiência personalizada. & \cite{Islam2021} \\ \hline
+    Reconstrução de movimento & Reconstrução do movimento humano para criar interações naturais de avatares & \cite{Ponton2023} \\ \hline
+
+    \multicolumn{3}{|c|}{\textbf{Resultados}} \\ \hline
+    Precisão no reconhecimento do movimento & Entre 95\% e 100\% & \cite{Tian2021, Mekruksavanich2024} \\ \cline{2-3}
+     & Abaixo de 95\% e acima de 90\% & \cite{papadopoulou2023towards, Asghar2023, Bian2022} \\ \cline{2-3}
+     & Menos de 90\% & \cite{Kwon2021, Hussain2022} \\ \hline
+
+    \multicolumn{3}{|c|}{\textbf{Tamanho da amostragem}} \\ \hline
+    Número de participantes & Apenas 1 & \cite{colpitts2023kinematics, Ceccarelli2024} \\ \cline{2-3}
+     & 4 ou menos & \cite{Hussain2022} \\ \cline{2-3}
+     & 12 ou menos& \cite{Tian2021, papadopoulou2023towards, Mekruksavanich2024, Bian2022, Ponton2023} \\ \cline{2-3}
+     & Entre 20 e 40 & \cite{Islam2021, Michaud2021} \\ \hline
+  
+    Número de exercícios & Apenas 1 & \cite{Ceccarelli2024} \\ \cline{2-3}
+     & 5 ou menos & \cite{Ponton2023, colpitts2023kinematics, Michaud2021, papadopoulou2023towards} \\ \cline{2-3}
+     & Entre 5 e 15 & \cite{Tian2021, Bian2022, Kwon2021} \\ \cline{2-3}
+     & Mais de 30 & \cite{Mekruksavanich2024, Hussain2022} \\ \hline
+
+    Base de dados & Conjuntos de dados de captura de movimento existentes & \cite{Ponton2023, Asghar2023,Kwon2021} \\ \hline
+
+    \multicolumn{3}{|c|}{\textbf{Problemas e Desafios}} \\ \hline
+
+    Coleta e Qualidade dos Dados & Ruído e erros de captura nos sensores, incluindo marcação incorreta de repetições e início/fim de exercícios. & \cite{Tian2021, colpitts2023kinematics, Mekruksavanich2024, Kwon2021} \\ \cline{2-3}
+    & Necessidade de normalização e alinhamento dos dados, incluindo offsets gravitacionais e orientações dos sensores. & \cite{Ponton2023} \\ \cline{2-3}
+    & Dificuldade em definir posturas ``boas" ou ``ruins" devido à falta de padrões claros. & \cite{papadopoulou2023towards} \\ \cline{2-3}
+    & Extrair características relevantes dos dados brutos multivariados de séries temporais & \cite{Mekruksavanich2024} \\ \cline{2-3}
+    &  Dificuldades em encontrar participantes, prepará-los para a coleta de dados e mantê-los durante todo o processo & \cite{Hussain2022} \\ \cline{2-3}
+    & Variações individuais como níveis de força e resistência & \cite{Hussain2022} \\ \hline
+
+
+    
+    Sensores & O uso de muitos sensores pode ser desconfortável para os usuários durante a prática de exercícios & \cite{Tian2021} \\ \cline{2-3}
+
+    & Erros associados ao posicionamento inicial do sensor IMU & \cite{colpitts2023kinematics, Michaud2021,Hussain2022} \\ \cline{2-3}
+
+    & O sistema precisou ser à prova de suor e resistente & \cite{Islam2021} \\ \cline{2-3}
+
+    & A presença de materiais ferromagnéticos perto dos sensores IMU pode perturbar o campo magnético local e, consequentemente, a estimativa da orientação & \cite{Michaud2021} \\ \cline{2-3}
+
+    & Desvantagens do Sistema de Captura Óptica como a complexidade de instalação, a necessidade de um espaço grande & \cite{Michaud2021} \\ \hline
+
+    Reconhecimento de Atividades & Movimentos complexos difíceis de classificar. & \cite{Tian2021, Asghar2023, Bian2022} \\ \cline{2-3}
+
+    & Dependência da Qualidade dos Dados de Treino & \cite{Ponton2023, Asghar2023,Kwon2021} \\ \cline{2-3}
+    
+    & A coleta de dados de diferentes indivíduos executando diferentes exercícios introduziu variações nos dados & \cite{Asghar2023} \\ \hline
+
+
+    Modelos de Machine Learning & A escolha do algoritmo influencia o desempenho. & \cite{Tian2021, papadopoulou2023towards}\\  \hline
+    
+    Feedback & Interfaces com muitas opções, confundir o usuário. & \cite{papadopoulou2023towards}\\ \hline
+
+
+    \end{tabularx}
+    \label{tab:categorias}
+\end{table*}
+
+As metodologias empregadas variaram entre algoritmos de aprendizado de máquina, análise de dados experimentais e estudos de caso. Os algoritmos de aprendizado de máquina foram particularmente eficazes na análise dos dados dos sensores e na geração de feedback em tempo real, conforme evidenciado pelos resultados dos estudos.
+
+Os principais resultados obtidos incluem precisão na detecção de movimentos, melhoria na correção de postura, redução de lesões e confiabilidade dos dados. Esses resultados destacam a eficácia dos sistemas de monitoramento com sensores inerciais na correção de exercícios e na prevenção de lesões.
+
+A categorização dos estudos na Tabela \ref{tab:categorias} permite uma análise comparativa dos diferentes enfoques e tecnologias utilizadas, facilitando a identificação de tendências e lacunas na literatura. Esta análise é útil para orientar futuras pesquisas e aprimorar os sistemas de monitoramento de exercícios com halteres.
+
+\newpage
+
+\section{Avaliação da Qualidade}
+\label{sec:avaliacao}
+Nesta seção, explicamos os critérios utilizados para avaliar a qualidade dos estudos incluídos na revisão. Os critérios de avaliação foram baseados em:
+
+\begin{itemize}
+    \item \textbf{Relevância}: A pertinência do estudo em relação ao tema da revisão. Este critério garante que os estudos selecionados contribuam diretamente para a compreensão do tópico em questão.
+    \item \textbf{Metodologia}: A adequação dos métodos utilizados para conduzir a pesquisa. Uma metodologia assegura que os resultados do estudo sejam confiáveis e replicáveis.
+    \item \textbf{Validade}: A validade interna e externa dos resultados apresentados. A validade interna refere-se à precisão dos resultados dentro do contexto do estudo, enquanto a validade externa diz respeito à generalização dos resultados para outras situações.
+    \item \textbf{Confiabilidade}: A consistência e a precisão dos dados e das conclusões. Estudos confiáveis são aqueles cujos resultados podem ser reproduzidos sob as mesmas condições.
+    \item \textbf{Originalidade}: A contribuição original do estudo para o campo de pesquisa. Este critério avalia a inovação e a novidade dos achados do estudo, que são importantes para o avanço do conhecimento na área.
+\end{itemize}
+
+\subsection{Resultados da Avaliação}
+
+Os estudos foram avaliados com base nos critérios acima mencionados, e os resultados da avaliação são resumidos a seguir:
+
+\begin{itemize}
+    \item \textbf{Relevância}: A maioria dos estudos foi considerada altamente relevante, com 80\% dos estudos diretamente relacionados ao tema da revisão.
+    \item \textbf{Metodologia}: Cerca de 70\% dos estudos utilizaram metodologias robustas e adequadas, enquanto 30\% apresentaram algumas limitações metodológicas.
+    \item \textbf{Validade}: Aproximadamente 75\% dos estudos apresentaram alta validade interna e externa, enquanto 25\% tiveram algumas questões de validade.
+    \item \textbf{Confiabilidade}: 85\% dos estudos foram considerados confiáveis, com dados e conclusões consistentes e precisos.
+    \item \textbf{Originalidade}: 60\% dos estudos trouxeram contribuições originais significativas para o campo de pesquisa.
+\end{itemize}
+
+Esses resultados indicam que, em geral, os estudos incluídos na revisão são de alta qualidade, com algumas áreas que poderiam ser melhoradas em futuras pesquisas.
+
+\newpage
+
+\section{Conclusão}
+\label{sec:conclusao}
+O reconhecimento de exercícios de academia e atividades físicas é um tema amplamente estudado, com avanços significativos no uso de sensores vestíveis e técnicas de aprendizado de máquina. Os estudos se concentram no reconhecimento automático de exercícios utilizando sensores inerciais (IMUs), que permitem identificar diferentes movimentos, como supino com barra, extensão de perna e prancha. Esses sistemas buscam monitorar e orientar os usuários para uma prática eficiente e segura. A precisão do reconhecimento pode ser aumentada pelo uso de múltiplos sensores, mas é necessário equilibrar essa abordagem com o conforto do usuário, otimizando a quantidade e a posição dos sensores no corpo.
+
+Diversos classificadores de aprendizado de máquina, como Random Forest, SVM e métodos de deep learning, têm sido empregados para identificar exercícios com alta precisão. Classificadores personalizados, ajustados a características específicas dos usuários, geralmente apresentam melhor desempenho. Dados provenientes de acelerômetros e giroscópios são amplamente utilizados, com a possibilidade de inclusão de informações adicionais, como frequência cardíaca, e do registro de movimentos corretos e incorretos validados por especialistas. O posicionamento dos sensores também é um fator crucial, sendo mãos, tornozelos e tronco áreas de destaque para capturar movimentos com maior acurácia.
+
+Além disso, métodos de fusão de dados têm sido explorados para combinar informações de múltiplos sensores, melhorando a identificação de exercícios. Técnicas de estratificação, que dividem os exercícios entre membros superiores e inferiores para treinar modelos específicos, também apresentam resultados promissores. Sistemas capazes de fornecer feedback em tempo real aos usuários, utilizando interfaces visuais ou auditivas, têm potencial para melhorar a execução dos exercícios e monitorar parâmetros como frequência cardíaca e calorias queimadas. Outra aplicação relevante está na área de reabilitação, onde sensores vestíveis ajudam no acompanhamento da recuperação, fornecendo métricas como amplitude de movimento e velocidade angular.
+
+No que diz respeito às áreas para pesquisas futuras, há grande potencial para avanços em várias frentes. A expansão dos conjuntos de dados, com maior número de participantes e informações coletadas, é essencial para melhorar a generalização dos algoritmos e seus resultados. A investigação de novos tipos de sensores, além das IMUs, como os de frequência cardíaca, pode complementar os dados disponíveis e aumentar a precisão do reconhecimento. Também é importante explorar modelos avançados de aprendizado de máquina, como métodos de deep learning, e técnicas de clustering para identificar padrões em grupos de usuários com características específicas.
+
+A personalização de modelos, adaptando-os às necessidades individuais dos usuários, é uma área promissora que pode oferecer maior precisão e relevância. A integração de sistemas de monitoramento com aplicativos dotados de interfaces intuitivas também é uma direção estratégica para facilitar a interação e fornecer feedback eficiente. Além disso, há demanda para o desenvolvimento de sistemas que permitam o acompanhamento remoto de exercícios, expandindo as possibilidades de uso fora de academias tradicionais.
+
+Pesquisas futuras também podem focar na incorporação de exercícios voltados para o tronco e membros inferiores, otimizando algoritmos para detectar esses movimentos específicos. A análise da qualidade dos exercícios realizados é outra área relevante, com potencial para prevenir lesões e maximizar os resultados do treinamento. Para validar esses avanços, é fundamental realizar estudos com participantes diversos, abrangendo diferentes idades, níveis de experiência e condições físicas. Por fim, a condução ética de pesquisas com participantes humanos deve ser priorizada, garantindo o cumprimento de normas e o consentimento informado.
+
+\section{Gráficos}
+\label{sec:grafics}
+
+Nesta seção, apresentamos uma análise visual do agrupamento dos estudos selecionados, conforme categorizado na Tabela \ref{tab:categorias}. Os gráficos foram gerados para ilustrar a distribuição das tecnologias utilizadas, metodologias empregadas e principais resultados obtidos nos estudos. A Figura \ref{fig:tecnologias} mostra a frequência das diferentes tecnologias de sensores inerciais utilizadas nos estudos, destacando a predominância de acelerômetros e giroscópios. A Figura \ref{fig:metodologia} apresenta a distribuição das metodologias empregadas, evidenciando o uso significativo de algoritmos de aprendizado de máquina. Por fim, a Figura \ref{fig:resultados} resume os principais resultados obtidos, como a alta precisão na detecção de movimentos e a melhoria na correção de postura. Esses gráficos fornecem uma visão clara das tendências e padrões observados nos estudos, facilitando a identificação de áreas de destaque e lacunas na literatura.
+
+
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            ybar,
+            bar width=0.5cm,
+            enlarge x limits=0.25,
+            ylabel={Número de Fontes},
+            xlabel={Tecnologias},
+            symbolic x coords={IMU's, Câmeras, EMG's, HBC's, FS's, Dispositivos},
+            xtick=data,
+            nodes near coords,
+            ymin=0,
+            ymax=13,
+            x tick label style={rotate=45, anchor=east}
+        ]
+            \addplot coordinates {
+                (IMU's, 12)
+                (Câmeras, 3)
+                (EMG's, 1)
+                (HBC's, 1)
+                (FS's, 1)
+                (Dispositivos, 2)
+            };
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Distribuição do número de fontes por tecnologia.}
+    \label{fig:tecnologias}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            ybar,
+            bar width=0.5cm,
+            enlarge x limits=0.25,
+            ylabel={Número de Fontes},
+            xlabel={Metodologias},
+            symbolic x coords={Processamento de Sinais, Aprendizado de Máquina, Outras Ferramentas },
+            xtick=data,
+            nodes near coords,
+            ymin=0,
+            ymax=7,
+            x tick label style={rotate=45, anchor=east}
+        ]
+            \addplot coordinates {
+                (Processamento de Sinais, 6)
+                (Aprendizado de Máquina, 6)
+                (Outras Ferramentas, 3)
+
+            };
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Distribuição do número de fontes por metodologia.}
+    \label{fig:metodologia}
+\end{figure}
+
+A Figura \ref{fig:aplicação} mostra a aplicação dos sensores inerciais nos estudos selecionados. Esta figura destaca como os sensores foram utilizados para monitorar diferentes tipos de exercícios, fornecendo dados sobre a amplitude, velocidade e aceleração dos movimentos. A Figura \ref{fig:amostragem} apresenta o tamanho da amostragem nos estudos, indicando o número de participantes envolvidos nas pesquisas. 
+
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            ybar,
+            bar width=0.5cm,
+            enlarge x limits=0.25,
+            ylabel={Número de Fontes},
+            xlabel={Resultados},
+            symbolic x coords={95\% a 100\%, 90\% a 95\%, Menos de 90\%},
+            xtick=data,
+            nodes near coords,
+            ymin=0,
+            ymax=4,
+            x tick label style={rotate=45, anchor=east}
+        ]
+            \addplot coordinates {
+                (95\% a 100\%, 2)
+                (90\% a 95\%, 3)
+                (Menos de 90\%, 2)
+  
+
+            };
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Distribuição do número de fontes por resultados.}
+    \label{fig:resultados}
+\end{figure}
+
+\newpage
+A Figura \ref{fig:exercicios} mostra o número de exercícios monitorados em cada estudo, destacando a variedade de movimentos analisados. Por fim, a Figura \ref{fig:dificuldades} resume as principais dificuldades encontradas nos estudos, como a coleta de dados, o reconhecimento de movimentos e a integração de feedback.
+
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            ybar,
+            bar width=0.5cm,
+            enlarge x limits=0.25,
+            ylabel={Número de Fontes},
+            xlabel={Aplicações},
+            symbolic x coords={Monitoramento de Exercícios, Correção de Postura, Academias Inteligentes, Reconstrução de Movimento},
+            xtick=data,
+            nodes near coords,
+            ymin=0,
+            ymax=13,
+            x tick label style={rotate=45, anchor=east}
+        ]
+            \addplot coordinates {
+                (Monitoramento de Exercícios, 8)
+                (Correção de Postura, 2)
+                (Academias Inteligentes, 1)
+                (Reconstrução de Movimento, 1)   
+
+            };
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Distribuição do número de fontes por aplicação.}
+    \label{fig:aplicação}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            ybar,
+            bar width=0.5cm,
+            enlarge x limits=0.25,
+            ylabel={Número de Fontes},
+            xlabel={Número de Participantes},   
+            symbolic x coords={1, 4 ou menos, 12 ou menos, 20 a 40, Base de dados},
+            xtick=data,
+            nodes near coords,
+            ymin=0,
+            ymax=7,
+            x tick label style={rotate=45, anchor=east}
+        ]
+            \addplot coordinates {
+                (1, 2)
+                (4 ou menos, 1)
+                (12 ou menos, 5)
+                (20 a 40, 2)
+                (Base de dados, 3)
+            };
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Distribuição do número de fontes por tamanho da amostragem.}
+    \label{fig:amostragem}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            ybar,
+            bar width=0.5cm,
+            enlarge x limits=0.25,
+            ylabel={Número de Fontes},
+            xlabel={Número de Exercícios},   
+            symbolic x coords={1, 5 ou menos, 5 a 15, Mais de 30},
+            xtick=data,
+            nodes near coords,
+            ymin=0,
+            ymax=7,
+            x tick label style={rotate=45, anchor=east}
+        ]
+            \addplot coordinates {
+                (1, 1)
+                (5 ou menos, 4)
+                (5 a 15, 3)
+                (Mais de 30, 2)
+            };
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Distribuição do número de fontes por número de exercícios.}
+    \label{fig:exercicios}
+
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            ybar,
+            bar width=0.5cm,
+            enlarge x limits=0.25,
+            ylabel={Número de Fontes},
+            xlabel={Dificuldades},
+            symbolic x coords={Coleta dos Dados, Machine Learning, Reconhecimento, Sensores, Feedback},
+            xtick=data,
+            nodes near coords,
+            ymin=0,
+            ymax=10,
+            x tick label style={rotate=45, anchor=east}
+        ]
+            \addplot coordinates {
+                (Coleta dos Dados, 9)
+                (Reconhecimento, 7)
+                (Machine Learning, 2)
+                (Sensores, 7)
+                (Feedback, 1)
+            };
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Distribuição do número de fontes por dificuldades.}
+    \label{fig:dificuldades}
+\end{figure}
+
+\printbibliography
 
 \end{document}

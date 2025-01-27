@@ -1,0 +1,16 @@
+Quais foram as tecnologias utilizadas para realizar a captura dos dados?
+
+Qual a metodologia para tratar os dados?
+
+Qual foi a aplicação?
+
+Qual a precisão do reconhecimento dos movimentos?
+
+qual foi a amostragem para os testes?
+
+Qual a variedade de atividades físicas foi analisada nos testes?
+
+quais foram as dificuldades encontradas?
+
+
+
